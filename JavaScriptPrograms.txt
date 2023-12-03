@@ -1,0 +1,4625 @@
+//Burglary Series (14): Adjectives Total
+
+/*function totalAmountAdjectives(obj){
+  return Object.keys(obj).length;
+}
+console.log(totalAmountAdjectives({ a: "moron" }));
+console.log(totalAmountAdjectives({ a: "idiot", b: "idiot", c: "idiot" }));
+console.log(totalAmountAdjectives({ a: "moron", b: "scumbag", c: "moron", d: "dirtbag" }));*/
+
+//Classes For Fetching Information on a Sports Player
+
+/*class Player{
+  constructor(name,age,height,weight){
+    this.name = name;
+    this.age = age;
+    this.height = height;
+    this.weight = weight;
+  }
+  getAge(){
+    return `${name} is age ${this.age}`;
+  }
+  getHeight(){
+    return `${name} is height ${this.height}`;
+
+  }
+  getWeight(){
+    return `${name} weighs ${this.weight}`;
+  }
+}
+
+const p1 = new Player("David Jones", 25, 175, 75);
+
+console.log(p1.getAge());*/
+
+//Check if Number is within a Given Range
+
+/*function isInRange(n, obj){
+  return n >= obj.min && n <= obj.max;
+}
+console.log(isInRange(4, { min: 0, max: 5 }));
+console.log(isInRange(4, { min: 4, max: 5 }));
+console.log(isInRange(4, { min: 6, max: 10 }));
+console.log(isInRange(5, { min: 5, max: 5 }));*/
+
+//Return Sole Element in a Set
+
+/*function elementSet(set){
+  const iterator = set.values();
+  return iterator.next().value;
+}
+
+const set = new Set();
+set.add(3);
+console.log(elementSet(set));*/
+
+
+//Burglary Series (07): Make a Copy
+
+/*const items = { piano: 100, tv: 50 };
+
+const copyItems = Object.assign({},items);
+const copyItems1 = {...items};
+const copyItems2 = items;
+console.log(copyItems);
+console.log(copyItems1);
+console.log(copyItems2);*/
+
+//Burglary Series (11): Say What
+
+/*const obj1 = { 1: "Mommy", 2: "please", 3: "help" };
+const obj2 = { 1: "Me", 2: "innocent", 3: "is" };
+const obj3 = { 1: "Must", 2: "lawyer", 3: "call" };
+
+console.log(Object.values(obj1).join(' '));
+console.log(Object.values(obj2).join(' '));
+console.log(Object.values(obj3).join(' '));*/
+
+/////////////-----GAMES-----///////////////
+
+//Typing Game
+
+/*function correctStream(arr1, arr2){
+  const arr = [];
+  
+  arr1.forEach((val,i) => {
+    if( val === arr2[i])
+      arr.push(1);
+    else
+      arr.push(-1);
+  });
+  return arr;
+}*/
+
+/*function correctStream(user, correct) {
+	return user.map((val,i) => correct.includes(val) ?  1 : -1);
+}
+console.log(correctStream(
+  ["it", "is", "find"],
+  ["it", "is", "fine"]
+));
+
+console.log(correctStream(
+  ["april", "showrs", "bring", "may", "flowers"],
+  ["april", "showers", "bring", "may", "flowers"]
+));
+
+console.log(correctStream(["cat", "blue", "skt", "umbrells", "paddy"],
+                         ["cat", "blue", "sky", "umbrella", "paddy"]));*/
+
+// Capture the Rook
+
+/*function canCapture(arr){
+  const rook1 = [...arr][0];
+  const rook2 = [...arr][1];
+  
+  return [...rook1][0] === [...rook2][0] 
+  || 
+  [...rook1][1] === [...rook2][1];
+}*/
+
+/*function canCapture([yourRook, opponentsRook]) {
+	return [...yourRook][0] === [...opponentsRook][0] 
+  || 
+  [...yourRook][1] === [...opponentsRook][1];
+}
+
+console.log(canCapture(["A8", "E8"]));
+console.log(canCapture(["A1", "B2"]));
+console.log(canCapture(["H4", "H3"]));
+console.log(canCapture(["F5", "C8"]));
+console.log(canCapture(["F9", "F8"]));*/
+
+//Scrabble Hand
+
+/*const arr = [
+  { tile: "N", score: 1 },
+  { tile: "K", score: 5 },
+  { tile: "Z", score: 10 },
+  { tile: "X", score: 8 },
+  { tile: "D", score: 2 },
+  { tile: "A", score: 1 },
+  { tile: "E", score: 1 }
+];
+
+function maximumScore(arr){
+  return arr
+    .map(obj => obj.score)
+  .reduce((p,c) => p + c,0);
+}
+
+console.log(maximumScore(arr));
+
+console.log(maximumScore([
+  { tile: "B", score: 2 },
+  { tile: "V", score: 4 },
+  { tile: "F", score: 4 },
+  { tile: "U", score: 1 },
+  { tile: "D", score: 2 },
+  { tile: "O", score: 1 },
+  { tile: "U", score: 1 }
+]));*/
+
+//Hitting the Jackpot
+
+/*function testJackpot(arr){
+  return [...new Set(arr)].length === 1;
+}
+console.log(testJackpot(["@", "@", "@", "@"]));
+console.log(testJackpot(["abc", "abc", "abc", "abc"]));
+console.log(testJackpot(["SS", "SS", "SS", "SS"]));
+console.log(testJackpot(["&&", "&", "&&&", "&&&&"]));
+console.log(testJackpot(["SS", "SS", "SS", "Ss"]));*/
+
+//Basic Variable Assignment
+
+/*function nameString(name){
+  return name+'Edabit';
+}
+console.log(nameString("Mubashir"));
+console.log(nameString("Matt"));
+console.log(nameString("javaScript"));*/
+
+//Count the Arguments
+
+/*function numArgs(...rest){
+  return rest.length;
+}
+console.log(numArgs());
+console.log(numArgs("foo"));
+console.log(numArgs("foo", "bar"));
+console.log(numArgs(true, false));
+console.log(numArgs({}));*/
+
+//The Modulus Operator Function
+
+/*function mod(a,b){
+  let c = Math.floor(a / b);
+  return a - (c*b);
+}
+
+console.log(mod(5, 2));
+console.log(mod(218, 5));
+console.log(mod(6, 3))*/
+
+//Arithmetic Progression
+
+
+/*function arithmeticProgression(start, diff, n){
+  return Array.from({ length:n }, (_,i) => start + (i * diff)).join(',');
+}
+
+console.log(arithmeticProgression(1, 2, 5));
+console.log(arithmeticProgression(1, 0, 5));
+console.log(arithmeticProgression(1, -3, 10));*/
+
+
+//Array Index
+
+/*const arr = [
+  ["m", "u", "b"],
+  ["a", "s", "h"],
+  ["i", "r", "1"]
+]
+
+const idx = [1, 3, 5, 8]
+
+function arrIndex(arr,idx){
+  
+  const str =  arr.map(val => val.join('')).join('');
+  return idx.map(val => str[val-1]).join('');
+}
+console.log(arrIndex(arr,idx));*/
+
+// using flat method
+
+/*const arr = [
+  ["m", "u", "b"],
+  ["a", "s", "h"],
+  ["i", "r", "1"]
+]
+
+const idx = [1, 3, 5, 8]
+
+function arrIndex(arr,idx){
+  
+  const str =  arr.flat();
+  console.log(str);
+  return idx.map(val => str[val-1]).join('');
+}
+console.log(arrIndex(arr,idx));*/
+
+
+
+//Keyboard Mistakes
+
+/*const alnum = {
+4 : 'A',
+5 : 'S',
+0 : 'O',
+1 : 'I'
+}
+
+function keyboardMistakes(str){
+  return [...str].map(ch => alnum[ch] ? alnum[ch] : ch).join('');
+}
+
+console.log(keyboardMistakes("MUB45H1R"));
+//console.log(keyboardMistakes("DUBL1N"));
+console.log(keyboardMistakes("51NG4P0RE"));*/
+/*  Rock, Paper, Scissors */
+
+/*const players = {
+Rock :'Scissors',
+Scissors : 'Paper',
+Paper : 'Rock'
+}
+
+function rps(p1,p2){
+ if(players[p1] === p2)
+   return 'The winner is p1';
+  if(players[p2] === p1)
+    return 'The winner is p2';
+  else
+  return `It's a draw`;
+}
+
+console.log(rps("Rock", "Paper"));//"The winner is p2"
+console.log(rps("Scissors", "Paper"));//"The winner is p1"
+console.log(rps("Paper", "Paper"));//"It's a draw"*/
+
+/*Reverse and Capitalize*/
+
+/*function reverseCapitalize(str){
+  return [...str.toUpperCase()].reverse().join('');
+}
+
+console.log(reverseCapitalize("abc"));
+console.log(reverseCapitalize("hellothere"));
+console.log(reverseCapitalize("input"));*/
+
+//A Redundant Function
+
+/*const redundant = () => {
+  return function (str){
+    return str;
+  }
+}
+console.log(redundant()('apple'));
+console.log(redundant()('pear'));
+console.log(redundant()(''));*/
+
+
+//Function Factory
+
+/*const plusFive = (n) => {
+  return function() {
+    return n + 5;
+  }
+}
+
+const plusTen = (n) => {
+  return n + 10;
+}*/
+
+
+
+//console.log(plusFive(10));
+
+
+//All About Anonymous Functions: Adding
+
+/*function addsNum(n){
+  return (m) => {
+    return m + n;
+  }
+}
+console.log(addsNum(1)(3));
+console.log(addsNum(10)(44));
+console.log(addsNum(10)(20));
+console.log(addsNum(1)(5.7));*/
+
+//Function Factory
+
+/*function makePlusFunction(baseNum) {
+	return (n) => {
+    return baseNum + n;
+  }
+}
+
+//plusFive(plusTen(0))
+makePlusFunction(5)(makePlusFunction(10))
+console.log(makePlusFunction(5)(makePlusFunction(10)(10)));*/
+
+//All About Anonymous Functions: Adding Suffixes
+
+/*function add_suffix(suffix) {
+	return (str) => {
+    return str+suffix;
+  }
+}
+
+console.log(add_suffix('ly')('hopeless'));*/
+
+//isRepdigit
+
+/*function isRepdigit(num) {
+	return [...new Set(num+'')].length === 1;
+}
+
+console.log(isRepdigit(66));
+console.log(isRepdigit(0)); 
+console.log(isRepdigit(-11));*/
+
+//****Upvotes vs Downvotes*****
+/*function getVoteCount(votes){
+  const { upvotes, downvotes } = votes;
+  return downvotes - upvotes;
+}
+
+console.log(getVoteCount({ upvotes: 13, downvotes: 0 }));
+console.log(getVoteCount({ upvotes: 2, downvotes: 33 }));
+console.log(getVoteCount({ upvotes: 132, downvotes: 132 }));*/
+/////  50-30-20 Strategy ***************
+
+/*function fiftyThirtyTwenty(ati) {
+	const budget = {};
+  budget.Needs = ati*0.5;
+  budget.Wants = ati*0.3;
+  budget.Savings = ati*0.2;
+  return budget;
+}
+
+console.log(fiftyThirtyTwenty(10000));
+console.log(fiftyThirtyTwenty(50000));
+console.log(fiftyThirtyTwenty(13450));*/
+
+//////  Volume of a Box **************
+
+/*function volumeOfBox(sizes){
+  const { width, length, height} = sizes;
+  return width*length*height;
+}
+
+console.log(volumeOfBox({ width: 2, length: 5, height: 1 }));
+console.log(volumeOfBox({ width: 4, length: 2, height: 2 }));
+console.log(volumeOfBox({ width: 2, length: 3, height: 5 }));*/
+
+// Luke, I Am Your ...
+/*const relationships = {
+'Darth Vader':	'father',
+'Leia':	'sister',
+'Han':	'brother in law',
+'R2D2':	'droid'
+}
+function relationToLuke(name) {
+	return `Luke, I am your ${relationships[name]}`;
+}
+
+console.log(relationToLuke("Darth Vader"));
+console.log(relationToLuke("Leia"));
+console.log(relationToLuke("Han"));*/
+
+// Extract City Facts
+/*function cityFacts(city) {
+	const { name, population, continent } = city;
+  return `${name} has a population of ${population} and is situated in ${continent}`;
+}
+
+console.log(cityFacts({
+  name: "Paris",
+  population: "2,140,526",
+  continent: "Europe"
+}));
+
+console.log(cityFacts({
+  name: "Tokyo",
+  population: "13,929,286",
+  continent: "Asia"
+}));*/
+
+//First Class, Second Class and Third Class Levers
+/*const lever = {
+  'efl':'first class lever',
+  'elf':'second class lever',
+  'fel':'third class lever'
+}
+function determineLever(arr) {
+	const lv = arr.join('');
+  return lever[lv];
+}
+
+console.log(determineLever(["e", "f", "l"]));
+console.log(determineLever(["e", "l", "f"]));
+console.log(determineLever(["f", "e", "l"]));*/
+
+//Is the Number Less than or Equal to Zero?
+/*function lessThanOrEqualToZero(num) {
+	return num <= 0;
+}
+
+console.log(lessThanOrEqualToZero(5));
+console.log(lessThanOrEqualToZero(0));
+console.log(lessThanOrEqualToZero(-2));*/
+
+//Less Than 100?
+/*function lessThan100(a, b) {
+	return (a+b) <= 100;
+}
+console.log(lessThan100(22, 15));
+console.log(lessThan100(83, 34));*/
+
+//Using the "&&" Operator
+/*function and(a, b) {
+	return a && b;
+}
+
+console.log(and(true, false));
+console.log(and(true, true));
+console.log(and(false, true));
+console.log(and(false, false));*/
+
+//Are the Numbers Equal?
+/*function isSameNum(num1, num2) {
+	return num1 === num2;
+}
+
+console.log(isSameNum(4, 8));
+console.log(isSameNum(2, 2));
+console.log(isSameNum(2, "2"));*/
+
+//Fix the Expression
+/*function isSeven(x) {
+	return x=="7"?true:false;
+}
+console.log(isSeven(4));
+console.log(isSeven(9));
+console.log(isSeven(7));*/
+//Equality Check
+/*function checkEquality(a, b) {
+  return a === b;
+}
+console.log(checkEquality(1, true));
+console.log(checkEquality(0, "0"));
+console.log(checkEquality(1,  1));*/
+
+/*function profitableGamble(prob, prize, pay) {
+	return prob * prize > pay;
+}
+
+console.log(profitableGamble(0.2, 50, 9));
+console.log(profitableGamble(0.9, 1, 2));
+console.log(profitableGamble(0.9, 3, 2));*/
+
+//Count the Arguments
+
+/*function numArgs(...args){
+  return args.length;
+}
+
+console.log(numArgs());
+console.log(numArgs("foo"));
+console.log(numArgs("foo", "bar"));
+console.log(numArgs(true, false));
+console.log(numArgs({}));
+
+//Word without First Character
+
+function newWord(str) {
+	return str.slice(1);
+}
+console.log(newWord("apple")); 
+console.log(newWord("cherry")); 
+console.log(newWord("plum"));*/
+
+//Name Greeting!
+/*const helloName = name => `Hello ${name}!`
+
+console.log(helloName("Gerald"));
+console.log(helloName("Tiffany"));
+console.log(helloName("Ed"));*/
+
+// Data Structures
+
+/*const arrowFunc = (arg) => arg;
+
+console.log(arrowFunc(3));
+console.log(arrowFunc("3"));
+console.log(arrowFunc(true));*/
+
+// Invert Colors
+
+/*function colorInvert(arr){
+  return arr.map(val => 255 - val);
+}
+console.log(colorInvert([255, 255, 255]));
+console.log(colorInvert([0, 0, 0]));
+console.log(colorInvert([165, 170, 221]));*/
+
+//Rotate the Array by One
+
+/*function rotateByOne(arr,rotnum){
+  const newArr =  arr.splice(arr.length-rotnum,rotnum).reverse();
+  return [...newArr,...arr];
+}
+console.log(rotateByOne([1, 2, 3, 4, 5],1));
+console.log(rotateByOne([6, 5, 8, 9, 7],2));*/
+//console.log(rotateByOne([20, 15, 26, 8, 4]));
+
+//True Ones, False Zeros
+
+/*function integerBoolean(num){
+  return [...num].map(val => Number(val) === 1 ?? false);
+}
+
+console.log(integerBoolean("100101"));
+console.log(integerBoolean("10"));
+console.log(integerBoolean("001"));*/
+
+//Nothing is Nothing?
+
+/*function nothingIsNothing(...arr) {
+	return arr.every(val => val);
+}
+
+console.log(nothingIsNothing(0, false, undefined, null));
+console.log(nothingIsNothing(33, "Hello",  true,  []));
+console.log(nothingIsNothing(true, false));*/
+
+//YouTube Upload Count
+/*function uploadCount(dates, month) {
+	return dates.filter(val=> val.split(' ')[0] === month).length;
+}
+
+console.log(uploadCount(["Sept 22", "Sept 21", "Oct 15"], "Sept"));
+console.log(uploadCount(["Sept 22", "Sept 21", "Oct 15"], "Oct"));*/
+
+/*const arr = ['h','a','r','s','h','i','t','h','a'];
+console.log(arr.sort());*/
+/*const data = [
+   { id: 1, name: 'Alan Wake', age: 21, city: 'New York' },
+    { id: 2, name: 'Steve Rogers', age: 106, city: 'Chicago' },
+    { id: 3, name: 'Tom Hanks', age: 47, city: 'Detroit' },
+    { id: 4, name: 'Ryan Burns', age: 16, city: 'New York' },
+    { id: 5, name: 'Jack Ryan', age: 31, city: 'New York' },
+    { id: 6, name: 'Clark Kent', age: 34, city: 'Metropolis' },
+    { id: 7, name: 'Bruce Wayne', age: 21, city: 'Gotham' },
+    { id: 8, name: 'Tim Drake', age: 21, city: 'Gotham' },
+    { id: 9, name: 'Jimmy Olsen', age: 21, city: 'Metropolis' },
+    { id: 10, name: 'Ryan Burns', age: 21, city: 'New York' },
+  ];
+
+const names = data.map(val => val.name).sort();
+const sortedNames = names.map(val => {
+  return data.find(y => y.name === val)
+});
+console.log(sortedNames);*/
+
+/*const A = [2, 1, 2];
+
+const uniele = [...new Set(A)];
+const newArr = uniele.map(n => {
+  return  A.filter( m => m === n).length;
+}
+)
+
+console.log(newArr);
+
+function makePair(n1,n2){
+  return [n1,n2];
+}
+
+console.log(makePair(1, 2));*/
+
+/*function drop(arr,val=1){
+  return arr.slice(val);
+}
+
+console.log(drop([1, 2, 3], 1));
+console.log(drop([1, 2, 3], 2));
+console.log(drop([1, 2, 3], 5));
+console.log(drop([1, 2, 3], 0));*/
+
+//ES6: Destructuring Arrays I
+/*const arr = [1, 2, 3, 4, 5, 6];
+
+const [ a, b, ...nums] = arr;
+console.log('a',a);
+console.log('b',b);
+console.log('nums',nums);*/
+
+//Return the Last Element in an Array
+//const arr = [1,2,3,4,5,6];
+//arr.slice(-1)
+//arr.slice(-2)
+//arr.slice(-3)
+/*function getLastItem(arr) {
+	return arr.slice(-1)[0];
+}
+console.log(getLastItem([1, 2, 3]));*/
+
+//Find the Index
+
+/*function findIndex(arr,str){
+  return arr.indexOf(str);
+ // return arr.findIndex(st => st === str);
+}
+
+console.log(findIndex(["hi", "edabit", "fgh", "abc"], "fgh"));
+console.log(findIndex(["Red", "blue", "Blue", "Green"], "blue"));
+console.log(findIndex(["a", "g", "y", "d"], "d"));
+console.log(findIndex(["Pineapple", "Orange", "Grape", "Apple"], "Pineapple"));*/
+
+//Array Indexing
+/*function valueAt(arr, i) {
+	return arr[Math.floor(i)];
+}
+console.log(valueAt([1, 2, 3, 4, 5, 6], 10 / 2));
+console.log(valueAt([1, 2, 3, 4, 5, 6], 8.0 / 2));
+console.log(valueAt([1, 2, 3, 4], 6.535355314 / 2));*/
+
+//Find the Index (Part 1)
+/*function search(arr, item) {
+	return arr.indexOf(item);
+}
+
+console.log(search([1, 5, 3], 5));
+console.log(search([9, 8, 3], 3));
+console.log(search([1, 2, 3], 4));
+console.log(search([1, 3, 5, 7, 9], 11));*/
+
+//Return Types
+/*function arrayValuesTypes(arr) {
+	return arr.map(val => typeof(val));
+}
+
+console.log(arrayValuesTypes([1, 2, "null", []]));
+console.log(arrayValuesTypes(["214", true, false, 2, 2.15, [], null]));
+console.log(arrayValuesTypes([21.1, "float", "array", ["I am array"], null, true, 214]));*/
+
+//Array of Strings to Array of Numbers
+/*function toNumberArray(arr) {
+	return arr.map(val => Number(val));
+}
+console.log(toNumberArray(["9.4", "4.2"]));
+console.log(toNumberArray(["91", "44"]));
+console.log(toNumberArray(["9.5", "8.8"]));*/
+
+/*const arr = [1,2,2,2,1,2];
+//const arr = [ 668474 ]
+const countArr = [...new Set(arr)].map(n => {
+ return [n,arr.filter(m => m === n).length]
+});
+
+console.log(countArr.sort());
+
+//console.log(countArr.sort().at(-1)[0]);
+//console.log(countArr.sort((a,b) => a - b).slice(-1)[0][0]);*/
+
+//const arr = ['Aashi','Siya','Neil','Harshitha','Vanditha'];
+
+/*const maxLength = Math.max(...arr.map(m => m.length))
+let index = arr.map(m => m.length).indexOf(maxLength);
+console.log(arr[index]);*/
+
+
+/*const st = 'uioiiip';
+//console.log([...new Set(st)]);
+const charsCounts = [...new Set(st)].map(n => [n, [...st].filter(m => m === n).length]);
+
+console.log(charsCounts.sort()[0][0]);*/
+
+/*const st = "zodiacs";
+const re = /[aeiou]+/;
+st.split(re);
+const consonents = st.split(re);
+console.log(consonents)
+const values = consonents.map(st => [...st].map(ch => ch.charCodeAt() - 96).reduce((p,c) => p + c));
+console.log(consonents);
+console.log(values);
+console.log(Math.max(...values));*/
+//[...consonents].map(ch => ch.charCodeAt() - 96)
+//console.log([...consonents].map(ch => ch.charCodeAt() - 96));
+
+/*const oddNums = [];
+let odd = 1;
+for(let i = 1; i<=3; i++){
+  oddNums.push(odd);
+  odd=odd+2;
+}
+console.log(oddNums);
+const evenNums = [];
+let even = 6;
+for(let i = 1; i<=3; i++){
+  evenNums.push(even);
+  even=even-2;
+}
+console.log(evenNums);*/
+
+//let odd = 1;
+/*Array.from({ length: 3 }, (v, i) => {
+  odd = odd + 2;
+  return odd;
+});*/
+/*let even = 6
+console.log(Array.from({ length: 3 }, (v, i) => {
+  i = odd
+  odd = odd+2;
+  return i;
+})
+);
+
+console.log(Array.from({ length: 3 }, (v, i) => {
+  i = even
+  even = even - 2;
+  return i;
+})
+);*/
+
+//Less Than, Greater Than
+/*function arrBetween(num1, num2, arr) {
+	return arr.filter(val => val > num1 && val < num2);
+}
+
+console.log(arrBetween(3, 8, [1, 5, 95, 0, 4, 7]));
+console.log(arrBetween(1, 10, [1, 10, 25, 8, 11, 6]));
+console.log(arrBetween(7, 32, [1, 2, 3, 78]));*/
+
+/*function hasSameBread(arr1, arr2) {
+	return arr1.at(0) === arr2.at(0) && arr1.at(-1) === arr2.at(-1);
+}
+console.log(hasSameBread(
+  ["white bread", "lettuce", "white bread"],
+  ["white bread", "tomato", "white bread"]
+));
+console.log(hasSameBread(
+  ["brown bread", "chicken", "brown bread"],
+  ["white bread", "chicken", "white bread"]
+));
+console.log(hasSameBread(
+  ["toast", "cheese", "toast"],
+  ["brown bread", "cheese", "toast"]
+));*/
+
+//ES6: Destructuring Arrays IV
+
+/*const [head, ...tail] = [1, 2, 3, 4];
+console.log(head);
+console.log(tail);*/
+
+//console.log(Math.sqrt(4));
+//console.log(Math.cbrt(8));
+
+/*function checkSquareAndCube(arr) {
+	return Math.sqrt(arr.at(0)) === Math.cbrt(arr.at(-1));
+}
+
+console.log(checkSquareAndCube([4, 8]));
+console.log(checkSquareAndCube([16, 48]));
+console.log(checkSquareAndCube([9, 27]));*/
+//Check if an Array Contains a Given Number
+/*function check(arr, el) {
+	return arr.includes(el);
+}
+
+console.log(check([1, 2, 3, 4, 5], 3));
+console.log(check([1, 1, 2, 1, 1], 3));*/
+
+//Burglary Series (14): Adjectives Total
+/*function totalAmountAdjectives(obj) {
+	return Object.values(obj).length;
+}
+console.log(totalAmountAdjectives({ a: "moron" }));
+console.log(totalAmountAdjectives({ a: "idiot", b: "idiot", c: "idiot" }));
+console.log(totalAmountAdjectives({ a: "moron", b: "scumbag", c: "moron", d: "dirtbag" }));*/
+
+//ES6: Destructuring Arrays III
+/*const arr = ["eyes", "nose", "lips", "ears"];
+let [eyes, nose, lips, ears] = arr;
+
+console.log(eyes);*/
+//Recreating the String.length Property
+/*function length(s) {
+	return s.length;
+}
+
+console.log(length("Hello World"));*/
+
+//Half, Quarter and Eighth
+
+/*function halfQuarterEighth(n) {
+const half = n/2;
+  const quarter = n/4;
+  const eighth = n/8;
+  
+  return [half,quarter,eighth];
+}
+
+console.log(halfQuarterEighth(6));
+console.log(halfQuarterEighth(22));
+console.log(halfQuarterEighth(25));*/
+//Shapes With N Sides
+/*function nSidedShape(n) {
+	switch(n){
+    case 1: return "circle";
+      break;
+         case 2: return "semi-circle";
+      break;
+    case 3: return "triangle";
+      break;
+    case 4: return "square";
+      break;
+    case 5: return "pentagon";
+      break;
+    case 6:	return "hexagon";
+      break;
+    case 7: return	"heptagon";
+      break;
+    case 8:	return "octagon";
+      break;
+    case 9:	return "nonagon"
+      break;
+    case 10: return "decagon";
+      break;
+    default: return "Invalid Input";
+  }
+}
+console.log(nSidedShape(3))*/
+
+//Array of Word Lengths
+/*function wordLengths(arr) {
+	return arr.map(val => val.length);
+}
+console.log(wordLengths(["hello", "world"]));
+console.log(wordLengths(["Halloween", "Thanksgiving", "Christmas"]));
+console.log(wordLengths(["She", "sells", "seashells", "down", "by", "the", "seashore"]));*/
+
+//Rotate the Array by One 
+/*function rotateByOne(arr) {
+	return [ ...arr.splice(arr.length - 1), ...arr];
+}	
+console.log(rotateByOne([1, 2, 3, 4, 5]));
+console.log(rotateByOne([6, 5, 8, 9, 7]));
+console.log(rotateByOne([20, 15, 26, 8, 4]));*/
+//Even or Odd?
+/*function evenOrOdd(arr) {
+	const num =  arr.reduce((p,c) => p + c);
+  console.log("Num ",  num);
+  return num % 2 === 0 ? 'even' : 'odd';
+}*/
+
+//console.log(evenOrOdd([0]));
+//console.log(evenOrOdd([1]));
+//console.log(evenOrOdd([0, 1, 5]));
+//console.log(evenOrOdd([]));
+
+//Let's Fuel Up!
+
+/*function calculateFuel(n) {
+	const fuel =  n * 10;
+  return fuel >= 100 ? fuel : 100;
+}
+
+console.log(calculateFuel(15));
+console.log(calculateFuel(23.5));
+console.log(calculateFuel(3));*/
+
+// Highest Scoring words
+
+/*function high(x){
+  const length = x.split(' ').map(val => 
+     [...val].reduce((p,c) => p + c.charCodeAt() - 96,0));
+  //console.log(length);
+  let index = length.indexOf(Math.max(...length));
+  //console.log(index);
+  return x.split(' ')[index];
+  
+}
+console.log(high('what time are we climbing up the volcano'));*/
+//console.log(high('aa b'));
+
+// Maximum triplets
+
+/*function maxTriSum(numbers){
+  return [...new Set(numbers)].sort((a,b) => a - b).slice(-3).reduce((p,c) => p + c);
+}
+console.log(maxTriSum([3,2,6,8,2,3]));*/
+
+// Quarter of the year
+
+/*const quarterOf = (month) =>{
+  switch(true){
+    case month <=3 && month >= 1: return 1;
+      break;
+      case month <=6 && month >= 4: return 2;
+      break;
+      case month <=9 && month >= 7: return 3;
+      break;
+      case month <=12 && month >=10: return 4;
+      break;
+    default: 'Invalid Input';
+      
+  }
+}
+
+console.log(quarterOf(3));
+console.log(quarterOf(8));
+console.log(quarterOf(11));*/
+
+/*[1, 5, 20, 30, 4, 9, 18].sort((a,b) => a - b);
+console.log([1, 5, 20, 30, 4, 9, 18].sort((a,b) => a - b));*/
+
+//ES6: Destructuring Arrays II
+
+/*const arr = ["cars", "planes", ["trains", ["motorcycles"]]];
+
+const [a,b,[c,[d]]] = arr;
+
+console.log(a);
+console.log(b);
+console.log(c);
+console.log(d);
+
+console.log(arr.flat(2));*/
+
+//Array From a Range of Numbers
+
+/*function rangeOfNum(start, end) {
+  const numbers = [];
+for(let i = start + 1; i < end; i++){
+  numbers.push(i);
+}
+  return numbers;
+}
+
+console.log(rangeOfNum(2, 4));
+console.log(rangeOfNum(5, 9));
+console.log(rangeOfNum(2, 11));*/
+
+//Get the Sum of All Array Elements
+/*function getSumOfItems(arr) {
+	return arr.reduce((p,c) => p + c);
+}
+console.log(getSumOfItems([2, 7, 4]));
+console.log(getSumOfItems([45, 3, 0]));
+console.log(getSumOfItems([-2, 84, 23]));*/
+
+// Learn Lodash: _.fill, Fill an Array With New Values
+/*const array = [1, 2, 3];
+function fill(arr, value, start = 0, end = arr.length) {
+	return arr.fill(value,start,end);
+}
+
+console.log(fill(array, "a"));
+console.log(fill(Array(4), 2));
+console.log(fill([4, 6, 8, 10], "*", 1, 3));*/
+
+//Skip the Drinks with Too Much Sugar
+/*function skipTooMuchSugarDrinks(drinks) {
+	return drinks.filter(drink => drink!=='cola' && drink!=='fanta');
+}
+
+console.log(skipTooMuchSugarDrinks(["fanta", "cola", "water"]));
+console.log(skipTooMuchSugarDrinks(["fanta", "cola"]));
+console.log(skipTooMuchSugarDrinks(["lemonade", "beer", "water"]));*/
+
+//Add the Index
+/*function addIndexes(arr) {
+	return arr.map((val,i) => val + i);
+}
+console.log(addIndexes([0, 0, 0, 0, 0]));
+console.log(addIndexes([1, 2, 3, 4, 5]));
+console.log(addIndexes([5, 4, 3, 2, 1]));*/
+
+//Filter Strings from Array
+
+/*function filterArray(arr) {
+	return arr.filter(val => typeof(val) === "number");
+}
+console.log(filterArray([1, 2, 3, "a", "b", 4]));
+console.log(filterArray(["A", 0, "Edabit", 1729, "Python", "1729"]));
+console.log(filterArray(["Nothing", "here"]));*/
+
+//True Ones, False Zeros
+/*function integerBoolean(n) {
+	return [...n].map(val => Boolean(+val));
+}
+
+console.log(integerBoolean("100101"));
+console.log(integerBoolean("10"));
+console.log(integerBoolean("001"));*/
+
+//The Forbidden Letter
+/*function forbiddenLetter(char, arr) {
+	return !arr.some((val) => val.includes(char));
+}
+
+console.log(forbiddenLetter("r", ["rock", "paper", "scissors"]));
+console.log(forbiddenLetter("a", ["spoon", "fork", "knife"]));
+console.log(forbiddenLetter("m", []));*/
+
+//A Redundant Function
+/*function redundant(str) {
+	return () => str;
+}
+
+console.log(redundant("apple")());
+console.log(redundant("pear")());
+console.log(redundant("")());*/
+
+//Function Factory
+/*const plusFive = function makePlusFunction(baseNum){
+  return (num) => baseNum + num;
+}
+
+console.log(plusFive(5)(2));*/
+
+/*function makePlusFunction(baseNum) {
+	return (num) => baseNum + num;
+}
+
+console.log(makePlusFunction(5)(2));
+console.log(makePlusFunction(5)(-8));
+console.log(makePlusFunction(10)(0));
+console.log(makePlusFunction(10)(188));*/
+
+/*const plusFive = (num) =>  num + 5;
+const plusTen = (num) => num + 10;
+console.log(plusFive(2));
+console.log(plusFive(-8));
+console.log(plusTen(0));
+console.log(plusTen(188));
+console.log(plusFive(plusTen(0)));*/
+
+//All About Anonymous Functions: Adding
+/*function addsNum(n) {
+	return (m) => n + m; 
+}
+
+console.log(addsNum(1)(3));
+console.log(addsNum(1)(5.7));*/
+
+//A Redundant Function
+
+/*function redundant(str){
+  return  () => str;
+}
+
+const f1 = redundant("apple");
+console.log(f1());
+
+const f2 = redundant("pear")
+console.log(f2());
+
+const f3 = redundant("")
+console.log(f3());*/
+
+//Function Factory
+
+/*function makePlusFunction(baseNum) {
+	return (num) => baseNum + num;
+}
+
+const plusFive = makePlusFunction(5);
+console.log(plusFive(2));
+console.log(plusFive(-8));
+
+const plusTen = makePlusFunction(10);
+
+console.log(plusTen(0));
+console.log(plusTen(188));
+console.log(plusFive(plusTen(0)));*/
+
+//All About Anonymous Functions: Adding
+/*function addsNum(n) {
+	return (m) => n + m;
+}
+const adds1 =  addsNum(1);
+
+console.log(adds1(3));
+console.log(adds1(5.7));
+
+const adds10 = addsNum(10);
+
+console.log(adds10(44));
+console.log(adds10(20));*/
+
+// All About Anonymous Functions: Adding Suffixes
+
+/*function add_suffix(suffix) {
+	return (str) => str + suffix;
+}
+
+const add_ly = add_suffix("ly");
+console.log(add_ly("hopeless"));
+console.log(add_ly("total"));
+
+const add_less = add_suffix("less");
+console.log(add_less("fear"));
+console.log(add_less("ruth"));*/
+
+// Returning an "Add" Function
+
+/*function add(n) {
+	return (m) => m + n;
+}
+
+console.log(add(10)(20));
+console.log(add(0)(20));
+console.log(add(-30)(80));*/
+
+//Currying Functions
+
+/*function multiply(arr){
+  return (n) => arr.map((val) => val*n);
+}
+
+console.log(multiply([1, 2, 3])(2));
+console.log(multiply([4, 6, 5])(10));
+console.log(multiply([1, 2, 3])(0));*/
+
+//Return Types
+
+/*function arrayValuesTypes(arr) {
+	return arr.map(val => typeof(val));
+}
+console.log(arrayValuesTypes([1, 2, "null", []]));
+console.log(arrayValuesTypes(["214", true, false, 2, 2.15, [], null]));
+console.log(arrayValuesTypes([21.1, "float", "array", ["I am array"], null, true, 214]));*/
+
+//Sum of Even Pairs in Array
+
+/*function oddSum(numbers) {
+  const arr = [];
+	for(let i = 0; i < numbers.length - 1; i++){
+    let bool = (numbers[i]+numbers[i+1]) % 2 === 0;
+    arr.push(bool);
+  }
+  return arr;
+}
+
+console.log(oddSum([11, 15, 6, 8, 9, 10]));
+console.log(oddSum([12, 21, 5, 9, 65, 32]));
+console.log(oddSum([1, 2, 3, 4, 5, 6]));*/
+
+//Word Endings
+/*function addEnding(arr, ending) {
+	return arr.map(val => val+ending);
+}
+
+console.log(addEnding(["clever", "meek", "hurried", "nice"], "ly"));
+console.log(addEnding(["new", "pander", "scoop"], "er"));
+console.log(addEnding(["bend", "sharpen", "mean"], "ing"));*/
+
+//Additive Inverse
+/*function additiveInverse(arr) {
+	return arr.map(val => val * -1);
+}
+console.log(additiveInverse([5, -7, 8, 3]));
+console.log(additiveInverse([1, 1, 1, 1, 1]));
+console.log(additiveInverse([-5, -25, 35]));*/
+//Exists a Number Higher?
+
+/*function existsHigher(arr, n) {
+	return arr.some(val => val >= n);
+}
+
+console.log(existsHigher([5, 3, 15, 22, 4], 10));
+console.log(existsHigher([1, 2, 3, 4, 5], 8));
+console.log(existsHigher([4, 3, 3, 3, 2, 2, 2], 4));
+console.log(existsHigher([], 5));*/
+
+//Filter by Digit Length
+
+/*function filterDigitLength(arr, num) {
+	return arr.filter(val => String(val).length === num);
+}
+
+console.log(filterDigitLength([88, 232, 4, 9721, 555], 3));
+console.log(filterDigitLength([2, 7, 8, 9, 1012], 1));
+console.log(filterDigitLength([32, 88, 74, 91, 300, 4050], 1));
+console.log(filterDigitLength([5, 6, 8, 9], 1));*/
+
+//Even Odd Partition
+/*function evenOddPartition(arr) {
+const evenNums = arr.filter(val => val % 2 === 0);
+const oddNums = arr.filter(val => val % 2 === 1);
+return [ evenNums, oddNums];
+}
+console.log(evenOddPartition([5, 8, 9, 2, 0]));
+console.log(evenOddPartition([1, 0, 1, 0, 1, 0]));
+console.log(evenOddPartition([1, 3, 5, 7, 9]));
+console.log(evenOddPartition([]));*/
+
+//Get the File Extension
+/*function getExtension(arr) {
+	return arr.map(val => val.split('.').at(-1));
+}
+
+console.log(getExtension(["code.html", "code.css"]));
+console.log(getExtension(["project1.jpg", "project1.pdf", "project1.mp3"]));
+console.log(getExtension(["ruby.rb", "cplusplus.cpp", "python.py", "javascript.js"]));*/
+
+//Minimum Removals to Make Sum Even
+
+/*function minimumRemovals(arr) {
+  let sum = arr.reduce((p,c) => p + c, 0);
+  return sum % 2 === 0 ? 0 : 1;
+}
+
+console.log(minimumRemovals([1, 2, 3, 4, 5]));
+console.log(minimumRemovals([5, 7, 9, 11]));
+console.log(minimumRemovals([5, 7, 9, 12]));*/
+
+//Which Function Returns the Larger Number?
+
+/*function whichIsLarger(f, g) {
+	switch(true){
+    case f() > g():return "f";
+      break;
+    case f() < g(): return "g";
+      break;
+    default: return "neither";      
+  }
+}
+
+console.log(whichIsLarger(() => 5, () => 10));
+console.log(whichIsLarger(() => 25,  () => 25));
+console.log(whichIsLarger(() => 505050, () => 5050));*/
+
+//Capitalize by ASCII
+/*function asciiCapitalize(str) {
+	return [...str].map(val => val.charCodeAt() % 2 === 0 ? val.toUpperCase() : val.toLowerCase()).join('');
+}
+console.log(asciiCapitalize("to be or not to be!"));
+console.log(asciiCapitalize("THE LITTLE MERMAID"));
+console.log(asciiCapitalize("Oh what a beautiful morning."));*/
+
+//Special Arrays
+/*function isSpecialArray(arr) {
+	return arr.every((val,i) => (val % 2 === 0 && i % 2 === 0) || (val % 2 === 1 && i % 2 === 1));
+}
+
+console.log(isSpecialArray([2, 7, 4, 9, 6, 1, 6, 3]));
+console.log(isSpecialArray([2, 7, 9, 1, 6, 1, 6, 3]));
+console.log(isSpecialArray([2, 7, 8, 8, 6, 1, 6, 3]));*/
+
+//Reverse Words Starting With a Particular Letter
+
+/*function specialReverse(s, c) {
+	return s.split(' ').map(val => val.startsWith(c) ? [...val].reverse().join('') : val);
+}
+
+console.log(specialReverse("word searches are super fun", "s"));
+console.log(specialReverse("first man to walk on the moon", "m"));
+console.log(specialReverse("peter piper picked pickled peppers", "p"));*/
+
+//War of Numbers
+
+/*function warOfNumbers(arr) {
+	let evenSum = arr.filter(n => n % 2 === 0).reduce((p,c) => p + c, 0);
+  let oddSum = arr.filter(m => m % 2 === 1 ).reduce((p,c) => p + c, 0);
+  
+  return Math.abs(evenSum - oddSum);  
+}
+
+console.log(warOfNumbers([2, 8, 7, 5]));
+console.log(warOfNumbers([12, 90, 75]));
+console.log(warOfNumbers([5, 9, 45, 6, 2, 7, 34, 8, 6, 90, 5, 243]));*/
+
+//Transform Upvotes
+
+/*function transformUpvotes(str) {
+	return str.split(' ').map(val => 
+     val.endsWith('k') ? val.slice(0,-1)*1000 : val*1
+  )
+}
+
+/*console.log(transformUpvotes("6.8k 13.5k"));
+console.log(transformUpvotes("5.5k 8.9k 32"));
+console.log(transformUpvotes("20.3k 3.8k 7.7k 992"));*/
+
+//Find Unique Character Strings
+
+/*function filterUnique(arr) {
+	return arr.filter(val => val === [...new Set(val)].join(''));
+}
+
+console.log(filterUnique(["abb", "abc", "abcdb", "aea", "bbb"]));
+console.log(filterUnique(["88", "999", "989", "9988", "9898"]));
+console.log(filterUnique(["ABCDE", "DDEB", "BED", "CCA", "BAC"]));*/
+
+//Count Letters in a Word Search
+
+/*function letterCounter(arr, letter) {
+	return arr.map(ary => ary.filter(ch => ch === letter).length).reduce((p,c) => p + c,0);
+}
+
+console.log(letterCounter([
+  ["D", "E", "Y", "H", "A", "D"],
+  ["C", "B", "Z", "Y", "J", "K"],
+  ["D", "B", "C", "A", "M", "N"],
+  ["F", "G", "G", "R", "S", "R"],
+  ["V", "X", "H", "A", "S", "S"]
+], "D"));
+
+console.log(letterCounter([
+  ["D", "E", "Y", "H", "A", "D"],
+  ["C", "B", "Z", "Y", "J", "K"],
+  ["D", "B", "C", "A", "M", "N"],
+  ["F", "G", "G", "R", "S", "R"],
+  ["V", "X", "H", "A", "S", "S"]
+], "H"));*/
+
+//Moving to the End
+
+/*function moveToEnd(arr, el) {
+	const newArray1 =  arr.filter(val => val === el); 
+  const newArray2 = arr.filter(val => val !== el);
+  return newArray2.concat(newArray1);
+}
+console.log(moveToEnd([1, 3, 2, 4, 4, 1], 1));
+console.log(moveToEnd([7, 8, 9, 1, 2, 3, 4], 9));
+console.log(moveToEnd(["a", "a", "a", "b"], "a"));*/
+
+//An Introduction to the Map-Reduce Pattern
+
+/*function magnitude(arr){
+  return Math.sqrt(arr.map(val => val**2).reduce((p,c) => p+c,0));
+}
+
+console.log(magnitude([3, 4]));
+console.log(magnitude([0, 0, -10]));
+console.log(magnitude([]));
+console.log(magnitude([2, 3, 6, 1, 8]));*/
+
+//Puzzle Pieces
+
+/*function puzzlePieces(a1, a2) {
+	if(a1.length !== a2.length)
+    return false;
+  
+ return  [...new Set(a1.map((val,i) => val + a2[i]))].length === 1;
+}
+console.log(puzzlePieces([1, 2, 3, 4], [4, 3, 2, 1]));
+console.log(puzzlePieces([1, 8, 5, 0, -1, 7], [0, -7, -4, 1, 2, -6]));
+console.log(puzzlePieces([1, 2], [-1, -1]));
+console.log(puzzlePieces([9, 8, 7], [7, 8, 9, 10]));*/
+
+/*function puzzlePieces(a1, a2) {
+  if(a1.length !== a2.length)
+    return false;
+	return a1.map((val,i) => val + a2[i]).every((val,_,arr) => val === arr[0]);
+}
+console.log(puzzlePieces([1, 2, 3, 4], [4, 3, 2, 1]));
+console.log(puzzlePieces([1, 8, 5, 0, -1, 7], [0, -7, -4, 1, 2, -6]));
+console.log(puzzlePieces([1, 2], [-1, -1]));
+console.log(puzzlePieces([9, 8, 7], [7, 8, 9, 10]));*/
+
+//Sum of Odd and Even Numbers
+/*function sumOddAndEven(arr) {
+let evenSum =  arr.filter(val => val % 2 === 0).reduce((p,c) => p + c,0);	
+let oddSum = arr.filter(val => val % 2 === 1).reduce((p,c) => p + c,0);
+  return [evenSum,oddSum];
+}
+
+console.log(sumOddAndEven([1, 2, 3, 4, 5, 6]));
+console.log(sumOddAndEven([-1, -2, -3, -4, -5, -6]));
+console.log(sumOddAndEven([0, 0]));*/
+
+//Is the Number Less than or Equal to Zero?
+/*function lessThanOrEqualToZero(num) {
+	return num <= 0;
+}
+console.log(lessThanOrEqualToZero(5));
+console.log(lessThanOrEqualToZero(0));
+console.log(lessThanOrEqualToZero(-2));*/
+
+//Are the Numbers Equal?
+/*function isSameNum(num1, num2) {
+	return num1 === num2;
+}
+console.log(isSameNum(4, 8));
+console.log(isSameNum(2, 2));
+console.log(isSameNum(2, "2"));*/
+
+//Profitable Gamble
+/*function profitableGamble(prob, prize, pay) {
+	return prob * prize > pay;
+}
+console.log(profitableGamble(0.2, 50, 9));
+console.log(profitableGamble(0.9, 1, 2));
+console.log(profitableGamble(0.9, 3, 2));*/
+
+//Boolean to String Conversion
+
+/*function boolToString(flag) {
+	return String(flag);
+}
+console.log(boolToString(true));
+console.log(boolToString(false));*/
+
+//Two Makes Ten
+
+/*function makesTen(a, b) {
+	return (a === 10 || b === 10) || (a + b === 10);
+}
+console.log(makesTen(9, 10));
+console.log(makesTen(9, 9));
+console.log(makesTen(1, 9));*/
+//Compare Strings by Count of Characters
+/*function comp(str1, str2) {
+	return str1.length === str2.length;
+}
+console.log(comp("AB", "CD"));
+console.log(comp("ABC", "DE"));
+console.log(comp("hello", "edabit"));*/
+
+//Multiple of 100
+/*function divisible(num) {
+	return num % 100 === 0;
+}
+console.log(divisible(1));
+console.log(divisible(1000));
+console.log(divisible(100));*/
+
+//Movie Theatre Admittance
+/*function acceptIntoMovie(age, isSupervised) {
+	return age >= 15 || isSupervised;
+}
+console.log(acceptIntoMovie(14, true));
+console.log(acceptIntoMovie(14, false));
+console.log(acceptIntoMovie(16, false));*/
+
+//Drinks Allowed?
+/*function shouldServeDrinks(age, onBreak) {
+	return age && !onBreak;
+}
+console.log(shouldServeDrinks(17, true));
+console.log(shouldServeDrinks(19, false));
+console.log(shouldServeDrinks(30, true));*/
+
+/*function yeah_nope(bool) {
+	return bool ? "yeah" : "nope";
+}
+console.log(yeah_nope(true));
+console.log(yeah_nope(false));*/
+//Is the String Odd or Even?
+/*function oddOrEven(s) {
+return s.length % 2 === 0;	
+}
+console.log(oddOrEven("apples"));
+console.log(oddOrEven("pears"));
+console.log(oddOrEven("cherry"));*/
+
+/*function flipBool(b) {
+	return Number(!b);
+}
+console.log(flipBool(true));
+console.log(flipBool(false));
+console.log(flipBool(1));
+console.log(flipBool(0));*/
+
+//Is the Number Even or Odd?
+/*function isEvenOrOdd(num) {
+	return num % 2 === 0 ? "even" : "odd";
+}
+console.log(isEvenOrOdd(3));
+console.log(isEvenOrOdd(146));
+console.log(isEvenOrOdd(19));*/
+
+//Simple Encoder
+
+/*function simpleEncoder(str) {
+	return [...str].map(ch => str.indexOf(ch) === str.lastIndexOf(ch) ? '[' : ']').join('');
+}
+
+console.log(simpleEncoder("Mubashir"));
+console.log(simpleEncoder("Matt"));
+console.log(simpleEncoder("eD  aBiT"));*/
+
+//Change Every Letter to the Next Letter
+/*function move(word) {
+	//return [...word].map(ch1 => ch1.charCodeAt() + 1)
+    //.map(n => String.fromCharCode(n)).join('');
+ return  [...word].map(ch => String.fromCharCode(ch.charCodeAt() + 1)).join('');
+  
+}
+
+console.log(move("hello"));
+console.log(move("bye"));
+console.log(move("welcome"));*/
+
+//Digital Decipher
+/*function digitalDecipher(eMessage, key) {
+ const nums = [...String(key)].map(n => +n);
+const str1 = eMessage.splice(0,String(key).length)
+.map((m,i) => String.fromCharCode(m - nums[i] + 96)).join('');
+const str2 = nums.splice(0,eMessage.length).map((l,i) =>  String.fromCharCode(eMessage[i] - l + 96)).join('');
+  return str1.concat(str2);
+}*/
+
+//console.log(digitalDecipher([20, 12, 18, 30, 21], 1939));
+//console.log(digitalDecipher([14, 30, 11, 1, 20, 17, 18, 18], 1990));
+//console.log(digitalDecipher([6, 4, 1, 3, 9, 20], 100));
+
+//console.log(number.toString(2).padStart(8,'0')) // 01101000
+//Hamming Code
+
+/*function hammingCode(message){
+	return [...message].map(ch => [...ch.charCodeAt().toString(2).padStart(8,'0')].map(ch1 => ch1.repeat(3)).join('')).join('');
+}
+//hammingCode("hey");
+console.log(hammingCode("hey"));
+//000111111000111000000000*/
+
+// Crypto Wars: Missing Number
+//const numbers = [1,2,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26];
+
+
+/*function decrypt(arr) {
+	let num = numbers.find(n => !arr.includes(n));
+  return String.fromCharCode(num + 96);
+}
+console.log(decrypt([19, 12, 14, 21, 22, 3, 11, 20, 9, 16, 24, 17, 2, 10, 13, 18, 7, 8, 4, 5, 1, 6, 25, 23, 26]))*/
+
+//Mubashir Cipher
+/*function mubashirCipher(message) {
+	const key= [['m', 'c'], ['u', 'e'], ['b', 'g'], ['a', 'k'], ['s', 'v'], ['h', 'x'], 
+	['i', 'z'], ['r', 'y'], ['p', 'w'], ['l', 'n'], ['o', 'j'], ['t', 'f'], ['q', 'd']];
+	const newKeys = key.flatMap(ch => ch);
+ return  [...message].map(ch => newKeys.includes(ch) ? newKeys[newKeys.indexOf(ch) - 1] : ch);
+  //return newKeys;
+}*/
+
+//console.log(mubashirCipher("mubashir is not amazing"));
+//cegkvxzy zv ljf kckizlb
+
+//Hurdle Jump
+/*function hurdleJump(hurdles, jumpHeight) {
+	return hurdles.every(n => jumpHeight >= n);
+}
+
+console.log(hurdleJump([1, 2, 3, 4, 5], 5));
+console.log(hurdleJump([5, 5, 3, 4, 5], 3));
+console.log(hurdleJump([5, 4, 5, 6], 10));
+console.log(hurdleJump([1, 2, 1], 1));*/
+
+//Truthy or Falsy?
+/*function isTruthy(input) {
+	return input ? 1 : 0;
+}
+
+
+console.log(isTruthy(0));
+console.log(isTruthy(false));
+console.log(isTruthy(""));
+console.log(isTruthy("false"));*/
+
+//Odd Up, Even Down
+
+/*function transform(arr) {
+	return arr.map(n => n % 2 === 0 ? n = n - 1 : n = n+1);
+}
+console.log(transform([1, 2, 3, 4, 5]));
+console.log(transform([3, 3, 4, 3]));
+console.log(transform([2, 2, 0, 8, 10]));
+*/
+//Get the Century
+/*function century(year) {
+	return `${Math.ceil(year/100)}th century`;
+}
+console.log(century(1756));
+console.log(century(1555));
+console.log(century(1000));
+console.log(century(1001));
+console.log(century(2005));*/
+
+//No Conditionals?
+/*function flip(y) {
+	return Math.abs(y - 1);
+}
+console.log(flip(1));
+console.log(flip(0));*/
+
+//Say "Hello" Say "Bye"
+/*function sayHelloBye(name, num) {
+  const capName = name.at(0).toUpperCase().concat(name.slice(1));
+	return num === 1 ? `Hello ${capName}` : `Bye ${capName}`;
+}
+  
+console.log(sayHelloBye("alon", 1));
+console.log(sayHelloBye("Tomi", 0));*/
+
+//Chat Room Status
+/*function chatroomStatus(users) {
+	if(users.length === 0)
+    return 'no one online';
+  else if(users.length === 1)
+  return `${users[0]} online`;
+  else if(users.length === 2)
+    return `${users[0]} and ${users[1]} online`;
+  else
+    return `${users[0]}, ${users[1]} and ${users.length-2} more online`;
+}
+console.log(chatroomStatus([]));
+console.log(chatroomStatus(["paRIE_to"]));
+console.log(chatroomStatus(["s234f", "mailbox2"]));
+console.log(chatroomStatus(["pap_ier44", "townieBOY", "panda321", "motor_bike5", "sandwichmaker833", "violinist91"]));*/
+
+//Hitting the Jackpot
+/*function testJackpot(result) {
+	return result.every(str => result[0] === str);
+}
+
+console.log(testJackpot(["@", "@", "@", "@"]));
+console.log(testJackpot(["abc", "abc", "abc", "abc"]));
+console.log(testJackpot(["SS", "SS", "SS", "SS"]));
+console.log(testJackpot(["&&", "&", "&&&", "&&&&"]));
+console.log(testJackpot(["SS", "SS", "SS", "Ss"]));*/
+
+//H4ck3r Sp34k
+/*function hackerSpeak(str) {
+  const vowels = {
+    'a':4,
+    'e':3,
+    'i':1,
+    'o':0,
+    's':5
+  }
+	return [...str].map(ch => vowels[ch] ?? ch).join('');
+}
+console.log(hackerSpeak("javascript is cool"));
+console.log(hackerSpeak("programming is fun"));
+console.log(hackerSpeak("become a coder"));*/
+
+//Factorize a Number
+/*function factorize(num) {
+	return Array.from({length:num},(val,i) => i+1).filter(n => num % n === 0);
+}
+console.log(factorize(17));
+console.log(factorize(12));
+console.log(factorize(4));*/
+
+/*function evenOddTransform(arr, n) {
+  let newArr = arr;
+  while(n > 0){
+   newArr = newArr.map(val => val % 2 === 0 ? val = val - 2 : val = val + 2);
+   n--;
+  }
+  return newArr;
+}
+//evenOddTransform([3, 4, 9], 3);
+
+console.log(evenOddTransform([3, 4, 9], 3));
+console.log(evenOddTransform([0, 0, 0], 10));
+console.log(evenOddTransform([1, 2, 3], 1));*/
+
+//Sum of all Evens in a Matrix
+
+/*function sumOfEvens(arr) {
+	return arr.flat().filter(n => n % 2 === 0).reduce((p,c) => p + c,0);
+}
+console.log(sumOfEvens([
+  [1, 0, 2],
+  [5, 5, 7],
+  [9, 4, 3]
+]));
+console.log(sumOfEvens([
+  [1, 1],
+  [1, 1]
+]));
+console.log(sumOfEvens([
+  [42, 9],
+  [16, 8]
+]));
+console.log(sumOfEvens([
+  [],
+  [],
+  []
+]));*/
+
+//Split a String Based on Vowels and Consonants
+
+/*function split(str) {
+  const consonants = str.replace(/[aeiou]/gi,'');
+	const vowels = str.match(/[aeiou]/gi).join('');
+  return vowels.concat(consonants);
+}
+console.log(split("abcde"));
+console.log(split("Hello!"));
+console.log(split("What's the time?"));*/
+
+//Word Numbers!
+
+/*function word(s) {
+	switch(s){
+    case "one" : return 1;
+    case "two": return 2;
+    case "three": return 3;
+    case "four": return 4;
+    case "five": return 5;
+    case "six": return 6;
+    case "seven": return 7;
+    case "eight": return 8;
+    case "nine": return 9;
+    default: return 0;
+  }
+}
+
+console.log(word("one"));
+console.log(word("two"));
+console.log(word("nine"));*/
+
+//Is the Last Character an "N"?
+
+/*function isLastCharacterN(word) {
+	return word.endsWith('n');
+}
+
+console.log(isLastCharacterN("Aiden"));
+console.log(isLastCharacterN("Piet"));
+console.log(isLastCharacterN("Bert"));
+console.log(isLastCharacterN("Dean"));*/
+
+//Front 3 - Slice Check Repeat Concatenate
+
+/*function frontThree(str) {
+	return str.slice(0,3).repeat(3);}
+
+console.log(frontThree("Python"));
+console.log(frontThree("Cucumber"));*/
+
+//Repeat String
+/*function repeatString(txt, n) {
+  if(typeof(txt) !== 'string')
+    return 'Not A String !!';
+	return txt.repeat(n);
+}
+
+console.log(repeatString("Mubashir", 2));
+console.log(repeatString("Matt", 3));
+console.log(repeatString(1990, 7));*/
+
+//Luke, I Am Your ...
+
+/*const relations = {
+  'Darth Vader':	'father',
+'Leia':	'sister',
+'Han':	'brother in law',
+'R2D2':	'droid'
+}
+
+function relationToLuke(name) {
+	return `Luke, I am your ${relations[name]}`;
+}
+
+console.log(relationToLuke("Darth Vader"));
+console.log(relationToLuke("Leia"));
+console.log(relationToLuke("Han"));*/
+
+//Is the Word Singular or Plural?
+
+/*function isPlural(word) {
+	return word.endsWith('s');
+}
+console.log(isPlural("changes"));
+console.log(isPlural("change"));
+console.log(isPlural("dudes"));
+console.log(isPlural("magic"));*/
+
+//The Fifth Argument
+
+/*function fifth(...args) {
+  if(args.length < 5)
+  return 'Not enough arguments';  
+  return typeof(args[4]); 
+}
+
+console.log(fifth(1, 2, 3, 4, 5));
+console.log(fifth("a", 2, 3, true, "five"));
+console.log(fifth());*/
+
+//Hello; Hello World; World
+/*function helloWorld(num) {
+	if(num % 3 === 0 && num % 5 !== 0)
+    return 'Hello';
+  else if(num % 3 !== 0 && num % 5 === 0)
+    return 'World';
+  else if(num % 3 === 0 && num % 5 === 0)
+    return 'Hello World';
+}
+
+console.log(helloWorld(3));
+console.log(helloWorld(5));
+console.log(helloWorld(15));*/
+
+//Is the Number Less than or Equal to Zero?
+
+/*function lessThanOrEqualToZero(num) {
+	return num <= 0;
+}
+console.log(lessThanOrEqualToZero(5));
+console.log(lessThanOrEqualToZero(0));
+console.log(lessThanOrEqualToZero(-2));*/
+
+//Get the File Name
+/*function getFilename(path) {
+	return path.split('/').at(-1);
+}
+
+console.log(getFilename("C:/Projects/pil_tests/ascii/edabit.txt"));
+console.log(getFilename("ffprobe.exe"));
+console.log(getFilename("C:/Users/johnsmith/Music/Beethoven_5.mp3"));*/
+
+//Chinese Zodiac
+/*function chineseZodiac(birthYear) {
+  let num = birthYear % 12;
+	switch(num){
+      case  0: return 'Monkey';
+      break;
+      case 1: return 'Rooster';
+      break;
+      case 2: return 'Dog'
+      break;
+      case 3: return 'Pig';
+      break;
+      case 4: return 'Rat';
+      break;
+      case 5: return 'Ox';
+      break;
+      case 6: return 'Tiger';
+      break;
+      case 7: return  'Rabbit';
+      break;
+      case 8: return  'Dragon';
+      break;
+      case 9: return  'Snake';
+      break;
+      case 10: return  'Horse';
+      break;
+      case 11: return  'Sheep'
+      break;
+    default: 'Invalid Input';
+  }
+}
+
+console.log(chineseZodiac(2021));
+console.log(chineseZodiac(2020));
+console.log(chineseZodiac(1933));
+console.log(chineseZodiac(1996));*/
+
+
+//Designing Rugs
+
+/*function makeRug(m,n,proc = '#'){
+ return  Array.from({length:m},() => proc.repeat(n));
+}
+console.log(makeRug(3, 5));
+console.log(makeRug(3, 5, '$'));
+console.log(makeRug(2, 2, 'A'));*/
+
+//Tallest Birthday Cake Candles
+/*function birthdayCakeCandles(candles) {
+	let maxNum = Math.max(...candles);
+  return candles.filter(val => val === maxNum).length;
+}   
+console.log(birthdayCakeCandles([4, 4, 1, 3]));
+console.log(birthdayCakeCandles([3, 2, 1, 3]));
+console.log(birthdayCakeCandles([82, 49, 82, 82, 41, 82, 15, 63, 38, 25]));*/
+
+//Sum of Minimums
+/*function sumMinimums(arr) {
+	return arr.map(val => Math.min(...val)).reduce((p,c) => p + c,0);
+}
+console.log(sumMinimums([
+  [1, 2, 3, 4, 5],
+  [5, 6, 7, 8, 9],
+  [20, 21, 34, 56, 100]
+]));*/
+
+//Cleaning Up Messy Arrays
+
+/*function cleanUpArray(arr) {
+  const even = [];
+  const odd = [];
+ arr.map(val => +val % 2 === 0 ? even.push(+val)  : odd.push(+val));
+  
+  return [ even, odd];
+}
+
+console.log(cleanUpArray(["8"]));
+console.log(cleanUpArray(["11"]));
+console.log(cleanUpArray(["7", "4", "8"]));
+console.log(cleanUpArray(["9", "4", "5", "8"]));*/
+
+//Largest Numbers
+
+/*function largestNumbers(n, arr) {
+	return arr.sort((a,b) => a - b).slice(arr.length - n);
+}
+console.log(largestNumbers(2, [4, 3, 2, 1]));
+console.log(largestNumbers(1, [7, 19, 4, 2]));
+console.log(largestNumbers(3, [14, 12, 57, 11, 18, 16]));
+console.log(largestNumbers(0, [1, 3, 4, 2]));*/
+
+//Factors of a Given Number
+/*function findFactors(num) {
+	return Array.from({ length : num}, (_,i) => i + 1).filter(n => num % n === 0);
+}
+console.log(findFactors(9));
+console.log(findFactors(12));
+console.log(findFactors(20));
+console.log(findFactors(0));*/
+
+//Age Difference Between Spouses
+/*function ageDifference(ages) {
+	const spousesage = ages.sort((a,b) => a - b).slice(-2);
+  let ageDifference = spousesage[1] - spousesage[0];
+  return ageDifference ? `${ageDifference} year`:`No age difference between spouses.`;
+}
+
+console.log(ageDifference([29, 1, 6, 8, 28]));
+console.log(ageDifference([43, 86, 49, 86]));
+console.log(ageDifference([2, 4, 6, 32, 27]));*/
+
+//Trimmed Averages
+/*function trimmedAverages(arr) {
+ arr.sort((a,b) => a - b).splice(-1,1);
+ arr.sort((a,b) => a - b).splice(0,1);
+ return  arr.reduce((p,c) => p + c,0)/arr.length;
+}
+console.log(trimmedAverages([4, 5, 7, 100]));
+console.log(trimmedAverages([10, 25, 5, 15, 20]));
+console.log(trimmedAverages([1, 1, 1]));*/
+
+//Array Index
+/*const arr = [
+  ["m", "u", "b"],
+  ["a", "s", "h"],
+  ["i", "r", "1"]
+];
+
+const idx = [1, 3, 5, 8];
+
+function arrIndex(arr, idx) {
+  const lst = arr.flat();
+	return idx.map(i => lst[i-1]).join('');
+}
+console.log(arrIndex(arr, idx));*/
+
+//Less Than 100 Array Remix
+/*function arrayLessThan100(arr) {
+	return arr.reduce((p,c) => p + c,0) < 100;
+}
+
+console.log(arrayLessThan100([5, 57]));
+console.log(arrayLessThan100([77, 30]));
+console.log(arrayLessThan100([0]));*/
+
+//Return Last Item
+
+/*function lastItem(input) {
+	return input.at(-1);
+  //return "HARSHITHA";
+}
+console.log(lastItem([0, 4, 19, 34, 50, -9, 2]));
+console.log(lastItem("The quick brown fox jumped over the lazy dog"));
+console.log(lastItem([]));*/
+
+//Outlier Number
+/*function outlierNumber(arr) {
+	const even = arr.filter(n => n % 2 === 0);
+  const odd = arr.filter(n => n % 2 === 1);
+  return even.length > odd.length ? odd[0] : even[0];  
+}
+
+console.log(outlierNumber([2, 3, 4]));
+console.log(outlierNumber([1, 2, 3]));
+console.log(outlierNumber([4, 1, 3, 5, 9]));*/
+
+//Sum of Even Pairs in Array
+/*function oddSum(numbers) {
+	const bool = [];
+  for(let i = 0; i < numbers.length - 1; i++){
+    let num = numbers[i] + numbers[i+1]; 
+    if( num % 2 === 0)
+      bool.push(true);
+    else
+      bool.push(false);
+  }
+  
+  return bool;
+}
+console.log(oddSum([11, 15, 6, 8, 9, 10]));
+console.log(oddSum([12, 21, 5, 9, 65, 32]));
+console.log(oddSum([1, 2, 3, 4, 5, 6]));*/
+
+
+/*function oddSum(numbers) {
+	return numbers.map((_,i,arr) => {
+    let sum = arr.slice(i,i+2).reduce((p,c) => p + c,0)
+    return sum % 2 === 0 ? true : false;
+    }).slice(0,-1) ;
+}
+console.log(oddSum([11, 15, 6, 8, 9, 10]));
+console.log(oddSum([12, 21, 5, 9, 65, 32]));
+console.log(oddSum([1, 2, 3, 4, 5, 6]));*/
+
+//Sum of Numbers in an Array
+/*function arraySum(nums) {
+	let sum = nums.map(n => n % 2 === 0 ? n**2 : Math.sqrt(n))
+    .reduce((p,c) => p + c,0);
+  return sum.toFixed(2);                       
+                         
+}
+console.log(arraySum([1, 3, 3, 1, 10]));
+console.log(arraySum([2, 3, 4, 5]));
+console.log(arraySum([1, 31, 3, 11, 0]));*/
+
+//String Pairs
+/*function stringPairs(str) {
+ const strarr =  [...str].map((_,i,arr) => arr.slice(i,i+2).join('')).filter((_,i) => i % 2 === 0);
+  return strarr.map(st => st.length === 1 ? st+'*':st);
+}
+console.log(stringPairs("mubashir"));
+console.log(stringPairs("edabit"));
+console.log(stringPairs("airforces"));
+console.log(stringPairs(""))*/
+
+// Move Zeros
+/*function moveZeros(arr) {
+	const zeros = arr.filter(n => n === 0);
+  const nonzeros = arr.filter(n => n !== 0);
+  return [...nonzeros, ...zeros];
+}
+
+console.log(moveZeros([1, 0, 1, 2, 0, 1, 3]));
+console.log(moveZeros([0, 1, null, 2, false, 1, 0]));
+console.log(moveZeros(['a', 0, 0, 'b', 'c', 'd', 0, 1, 0, 1, 0, 3, 0, 1, 9, 0, 0, 0, 0, 9]));*/
+
+//Find the Average of the Letters 📊
+/*function averageIndex(arr) {
+	let avg = arr.map(ch => ch.charCodeAt() - 96).reduce((p,c) => p + c,0)/arr.length;
+  return avg.toFixed(2);
+}	
+
+console.log(averageIndex(["a", "b", "c", "i"]));
+console.log(averageIndex(["e", "d", "a", "b", "i", "t"]));
+console.log(averageIndex(["y", "o", "u", "a", "r", "e", "t", "h", "e", "b", "e", "s", "t"]));*/
+
+//Date Format
+/*function formatDate(date) {
+	return date.split('/').reverse().join('');
+}
+console.log(formatDate("11/12/2019"));
+console.log(formatDate("12/31/2019"));
+console.log(formatDate("01/15/2019"));*/
+
+//Return the Sum of Two Numbers
+/*function addition(a, b) {
+	return a + b;
+}
+console.log(addition(3, 2));
+console.log(addition(-3, -6));
+console.log(addition(7, 3));*/
+
+/*function calcAge(age) {
+	return age * 365;
+}
+
+console.log(calcAge(65));*/
+
+//Return a String as an Integer
+
+/*function stringInt(str) {
+	return parseInt(str);
+}
+console.log(stringInt("6"));
+console.log(stringInt("1000"));
+console.log(stringInt("12"));*/
+
+//Return the Remainder from Two Numbers
+/*function remainder(x, y) {
+	return x % y;
+}
+console.log(remainder(1, 3));
+console.log(remainder(3, 4));
+console.log(remainder(-9, 45));
+console.log(remainder(5, 5));*/
+
+//180° / 3.14159
+//Radians to Degrees
+/*function radiansToDegrees(rad) {
+	return rad *  (180  / 3.14159);
+}
+console.log(radiansToDegrees(1));
+console.log(radiansToDegrees(20));
+console.log(radiansToDegrees(50));*/
+
+//Correct the Mistakes
+/*function squared(b) {
+	return b**2;
+}
+console.log(squared(5));*/
+
+//Miserable Parody of a Calculator
+/*function calculator(str) {
+	return eval(str);
+}
+
+console.log(calculator("23+4"));
+console.log(calculator("45-15"));
+console.log(calculator("13+2-5*2"));
+console.log(calculator("49/7*2-3"));*/
+
+//On/Off Switches
+
+/*function posCom(num) {
+	return Math.pow(2,num);
+}
+
+console.log(posCom(1));
+console.log(posCom(3));
+console.log(posCom(10));*/
+
+//Find Out the Leap Year
+/*function leapYear(year) {
+	return year % 4 === 0;
+}*/
+
+/*console.log(leapYear(2020));
+console.log(leapYear(2021));
+console.log(leapYear(1968));*/
+
+/*console.log(leapYear(1990));
+
+console.log(leapYear(1924));
+
+console.log(leapYear(2021));*/
+
+//Next Number Greater Than A and B and Divisible by B
+/*function divisibleByB(a, b) {
+  let c = a;
+	while(c % b !== 0){
+    c = c + 1;
+  }
+  return c;
+}
+
+console.log(divisibleByB(17, 8));
+console.log(divisibleByB(98, 3));
+console.log(divisibleByB(14, 11));*/
+
+//Number of Stickers
+/*function howManyStickers(n) {
+	return (3**n) * 2;
+}
+
+console.log(howManyStickers(1));
+console.log(howManyStickers(2));
+console.log(howManyStickers(3));*/
+
+//Sum of Two Digit Numbers
+/*function twoDigitSum(n) {
+	return eval(String(n).split('').join('+'));
+}
+console.log(twoDigitSum(45));
+console.log(twoDigitSum(38));
+console.log(twoDigitSum(67));*/
+
+//Perfect Roots
+
+/*function perfectRoots(n) {
+	return Math.pow(n,2);
+}
+
+console.log(perfectRoots(256));*/
+
+//Characters in Shapes
+
+/*function countCharacters(arr) {
+	return arr.reduce((p,c) => p + c.length,0);
+}
+
+console.log(countCharacters([
+  "###",
+  "###",
+  "###"
+]));
+console.log(
+countCharacters([
+"22222222",
+"22222222"
+]));
+console.log(countCharacters([
+ "------------------"
+]));
+
+console.log(
+countCharacters([]));
+
+console.log(countCharacters(["", ""]));
+
+
+//Extremely Over-Nested
+
+/*function deNest(arr) {
+	return arr.flat(Infinity)[0];
+}
+
+console.log(deNest([[[[[[[[[[[[3]]]]]]]]]]]]));
+console.log(deNest([[[[[[[true]]]]]]]));
+console.log(deNest([[[[[[[[[[[[[[[[["edabit"]]]]]]]]]]]]]]]]]));*/
+
+//Cowboy Shootout
+
+/*function rogerShots(arr) {
+	return arr.map(val => val === 'Bang!' || val === 'BangBang!' ? 0.5 : 0).reduce((p,c) => p + c,0);
+}
+
+console.log(rogerShots(["Bang!", "Bang!", "Bang!", "Bang!", "Bang!", "Bang!"]));
+console.log(rogerShots(["Bang!", "Bang!", "Bang!", "Bang!", "BangBang!"]));
+console.log(rogerShots(["Bang!", "BangBangBang!", "Boom!", "Bang!", "BangBang!", "BangBang!"]));*/
+
+//Convert Number to Corresponding Month Name
+/*function monthName(num) {
+	const months = ['January','February','March','April','May','June','July', 'August', 'September', 'October', 'November', 'December'];
+  return months[num-1];
+}
+
+console.log(monthName(1))
+console.log(monthName(3));
+console.log(monthName(12));
+console.log(monthName(6));*/
+
+
+// CMS Selector Based on a Given String
+
+/*function cmsSelector(arr, str) {
+	return arr.filter(val => val.toLowerCase().includes(str));
+}
+
+console.log(cmsSelector(["WordPress", "Joomla", "Drupal"], "w"));
+console.log(cmsSelector(["WordPress", "Joomla", "Drupal", "Magento"], "ru"));
+console.log(cmsSelector(["WordPress", "Joomla", "Drupal", "Magento"], ""));*/
+
+
+/*function evenLast(arr) {
+	return arr.filter((_,i) => i % 2 === 0)
+    .map(m => m * arr.at(-1))
+    .reduce((p,c) => p + c,0);
+}
+
+console.log(evenLast([2, 3, 4, 5]));
+console.log(evenLast([1, 3, 3, 1, 10]));
+console.log(evenLast([]));*/
+
+//Unlucky 13
+/*function unlucky13(nums) {
+	return nums.filter(n => n % 13 !== 0);
+}
+console.log(unlucky13([53, 182, 435, 591, 637]));
+console.log(unlucky13([24, 316, 393, 458, 1279]));
+console.log(unlucky13([104, 351, 455, 806, 871]));*/
+
+//Fix the Error: Filtering out Empty Arrays
+
+/*function removeEmptyArrays(arr) {
+	return arr.filter(x => typeof(x) !== "object" && x.length !== 0);
+}
+console.log(removeEmptyArrays(["a", "b", []]));
+console.log(removeEmptyArrays([1, 2, [], 4]));*/
+
+//Where is Bob!?!
+
+/*function findBob(names) {
+	return names.indexOf("Bob");
+}
+
+console.log(findBob(["Jimmy", "Layla", "Bob"]));
+console.log(findBob(["Bob", "Layla", "Kaitlyn", "Patricia"]));
+console.log(findBob(["Jimmy", "Layla", "James"]));*/
+
+//Find the Largest Number in an Array
+
+/*function findLargestNum(arr) {
+	return arr
+}*/
+
+
+//Product Divisible by Sum?
+
+/*function divisible(arr) {
+let multiply =  arr.reduce((p,c) => p * c, 1);
+let sum =   arr.reduce((p,c) => p + c, 0);
+return multiply % sum === 0;
+}
+
+console.log(divisible([3, 2, 4, 2]));
+console.log(divisible([4, 2, 6]));
+console.log(divisible([3, 5, 1]));*/
+
+//Find the Largest Number in an Array
+/*function findLargestNum(arr) {
+	return Math.max(...arr);
+}
+console.log(findLargestNum([4, 5, 1, 3]));
+console.log(findLargestNum([300, 200, 600, 150]));
+console.log(findLargestNum([1000, 1001, 857, 1]));*/
+
+//Typing Game
+
+/*function correctStream(user, correct) {
+	return user.map((val,i) => val === correct[i] ? 1 : -1);
+}
+console.log(correctStream(
+  ["it", "is", "find"],
+  ["it", "is", "fine"]
+));
+console.log(correctStream(
+  ["april", "showrs", "bring", "may", "flowers"],
+  ["april", "showers", "bring", "may", "flowers"]
+));*/
+
+//Next Element in Arithmetic Sequence
+
+/*function nextElement(arr) {
+	return arr[0] + (arr.length * (arr[1] - arr[0]));
+}
+
+console.log(nextElement([3, 5, 7, 9]));
+console.log(nextElement([-5, -6, -7]));
+console.log(nextElement([2, 2, 2, 2, 2]));*/
+
+//Capture the Rook
+/*function canCapture([yourRook, opponentsRook]) {
+	return yourRook.at(0) === opponentsRook.at(0)
+  || yourRook.at(1) === opponentsRook.at(1)
+}
+console.log(canCapture(["A8", "E8"]));
+console.log(canCapture(["A1", "B2"]));
+console.log(canCapture(["H4", "H3"]));
+console.log(canCapture(["F5", "C8"]));*/
+
+//Fix the Error / Comparing Arrays (Part #2)
+
+/*function checkEquals(arr1, arr2) {
+return arr1.every((val,i) => arr2[i] === val) && arr1.length === arr2.length;
+}*/
+
+//console.log(checkEquals([1, 2], [1, 3]));
+//console.log(checkEquals([1, 2], [1, 2]));
+//console.log(checkEquals([4, 5, 6], [4, 5, 6, 9]));
+//console.log(checkEquals([4, 7, 6], [4, 5, 6]));
+//console.log(checkEquals([1, 12], [11, 2]));
+
+/*function checkEquals(arr1, arr2) {
+return JSON.stringify(arr1) === JSON.stringify(arr2);
+}
+
+console.log(checkEquals([1, 2], [1, 3]));
+console.log(checkEquals([1, 2], [1, 2]));
+console.log(checkEquals([4, 5, 6], [4, 5, 6]));
+console.log(checkEquals([4, 7, 6], [4, 5, 6]));
+console.log(checkEquals([1, 12], [11, 2]));*/
+
+//Word Endings
+/*function addEnding(arr, ending) {
+	return arr.map(val => val + ending);
+}
+
+console.log(addEnding(["clever", "meek", "hurried", "nice"], "ly"));
+console.log(addEnding(["new", "pander", "scoop"], "er"));
+console.log(addEnding(["bend", "sharpen", "mean"], "ing"));*/
+
+//Array of Consecutive Numbers
+/*function getSequence(low, high) {
+  let n = (high - low) + 1;
+	return Array.from({length:n}, (val,i) => low + (i * 1));
+}
+
+console.log(getSequence(1, 5));
+console.log(getSequence(98, 100));
+console.log(getSequence(1000, 1000));*/
+
+//Return the Four Letter Strings
+/*function isFourLetters(arr) {
+	return arr.filter(val => val.length === 4);
+}
+
+console.log(isFourLetters(["Tomato", "Potato", "Pair"]));
+console.log(isFourLetters(["Kangaroo", "Bear", "Fox"]));
+console.log(isFourLetters(["Ryan", "Kieran", "Jason", "Matt"]));*/
+
+//Maximum Difference
+/*function difference(nums) {
+	return Math.max(...nums) - Math.min(...nums);
+}
+console.log(difference([10, 15, 20, 2, 10, 6]));
+console.log(difference([-3, 4, -9, -1, -2, 15]));
+console.log(difference([4, 17, 12, 2, 10, 2]));*/
+
+//Eliminate Odd Numbers within an Array
+/*function noOdds(arr) {
+	return arr.filter(n => n % 2 === 1);
+}
+console.log(noOdds([1, 2, 3, 4, 5, 6, 7, 8]));
+console.log(noOdds([43, 65, 23, 89, 53, 9, 6]));
+console.log(noOdds([718, 991, 449, 644, 380, 440]));*/
+
+//Multiply by Length
+
+/*function multiplyByLength(arr) {
+	return arr.map(n => n * arr.length);
+}
+console.log(multiplyByLength([2, 3, 1, 0]));
+console.log(multiplyByLength([4, 1, 1]));
+console.log(multiplyByLength([1, 0, 3, 3, 7, 2, 1]));
+console.log(multiplyByLength([0]));*/
+
+//Remove Null from an Array
+/*function removeNull(arr) {
+	return arr.filter(val => val !== null);
+}
+console.log(removeNull(["a", null, "b", null]));
+console.log(removeNull([null, null, null, null, null]));
+console.log(removeNull([7, 8, null, 9]));*/
+
+//Hurdle Jump
+/*function hurdleJump(hurdles, jumpHeight) {
+	return hurdles.every(val => val <= jumpHeight);
+}
+
+console.log(hurdleJump([1, 2, 3, 4, 5], 5));
+console.log(hurdleJump([5, 5, 3, 4, 5], 3));
+console.log(hurdleJump([5, 4, 5, 6], 10));
+console.log(hurdleJump([1, 2, 1], 1));*/
+
+//Find the Smallest Number in an Array
+
+/*function findSmallestNum(arr) {
+	return Math.min(...arr);
+}
+console.log(findSmallestNum([34, 15, 88, 2]));
+console.log(findSmallestNum([34, -345, -1, 100]));
+console.log(findSmallestNum([-76, 1.345, 1, 0]));
+console.log(findSmallestNum([0.4356, 0.8795, 0.5435, -0.9999]));
+console.log(findSmallestNum([7, 7, 7]));*/
+
+//Return the First and Last Elements in an Array
+/*function firstLast(arr) {
+	return arr.filter((_,i) => i === 0 || i === arr.length - 1);
+}
+
+console.log(firstLast([5, 10, 15, 20, 25]));
+console.log(firstLast(["edabit", 13, null, false, true]));
+console.log(firstLast([undefined, 4, "6", "hello", null]));*/
+
+//Sandwich Fillings
+
+/*function getFillings(sandwich) {
+	return sandwich.slice(1,-1);
+
+}
+
+console.log(getFillings(["bread", "ham", "cheese", "ham", "bread"]));
+console.log(getFillings(["bread", "lettuce", "bacon", "tomato", "bread"]));
+console.log(getFillings(["bread", "sausage", "tomato", "bread"]));*/
+
+//Difference of Max and Min Numbers in Array
+/*function diffMaxMin(arr) {
+	return Math.max(...arr) - Math.min(...arr);
+}
+
+console.log(diffMaxMin([10, 4, 1, 4, -10, -50, 32, 21]));
+console.log(diffMaxMin([44, 32, 86, 19]));*/
+
+//Generate a Countdown of Numbers in an Array
+
+/*function countdown(start) {
+	return Array.from({ length: start+1}, (val,i) => i).reverse();
+}
+
+console.log(countdown(5));
+console.log(countdown(1));
+console.log(countdown(0));*/
+
+//Find the Bug: Checking Even Numbers
+
+/*function checkAllEven(arr) {
+  return arr.every(x => x % 2 === 0)
+}
+
+console.log(checkAllEven([1, 2, 3, 4]));
+console.log(checkAllEven([2, 4, 6]));
+console.log(checkAllEven([5, 6, 8, 10]));
+console.log(checkAllEven([-2, 2, -2, 2]));*/
+
+//X and Y Coordinates
+
+/*function convertCartesian(x, y) {
+	return x.map((n,i) => [n,y[i]]);
+}
+
+console.log(convertCartesian([1, 5, 3, 3, 4], [5, 8, 9, 1, 0]));
+console.log(convertCartesian([9, 8, 3], [1, 1, 1]));*/
+
+//Nth Smallest Integer
+/*function nthSmallest(arr, n) {
+	return arr.sort((a,b) => a - b).at(n-1);
+}
+
+console.log(nthSmallest([1, 3, 5, 7], 1));
+console.log(nthSmallest([1, 3, 5, 7], 3));
+console.log(nthSmallest([1, 3, 5, 7], 5));
+console.log(nthSmallest([7, 3, 5, 1], 2));*/
+
+//Applying Discounts
+
+/*function getDiscounts(nums, d) {
+  let val = parseFloat(d)/100;
+	return nums.map(n => n * val);
+}
+console.log(getDiscounts([2, 4, 6, 11], "50%"));
+console.log(getDiscounts([10, 20, 40, 80], "75%"));
+console.log(getDiscounts([100], "45%"));*/
+
+/*function filterStateNames(arr, type) {
+	return type === "abb"
+    ? arr.filter(val => val.length === 2) 
+  : arr.filter(val => val.length > 2)
+}
+
+console.log(filterStateNames(["Arizona", "CA", "NY", "Nevada"], "abb"));
+console.log(filterStateNames(["Arizona", "CA", "NY", "Nevada"], "full"));
+console.log(filterStateNames(["MT", "NJ", "TX", "ID", "IL"], "abb"));
+console.log(filterStateNames(["MT", "NJ", "TX", "ID", "IL"], "full"));*/
+
+//Date Format
+/*function formatDate(date) {
+	return date.split('/').reverse().join('');
+}
+
+console.log(formatDate("11/12/2019"));
+console.log(formatDate("12/31/2019"));
+console.log(formatDate("01/15/2019"));*/
+
+//Repeat the Same Item Multiple Times
+/*function repeat(item, times) {
+	return Array.from({length:times},() => item);
+}
+
+console.log(repeat("edabit", 3));
+console.log(repeat(13, 5));
+console.log(repeat("7", 2));
+console.log(repeat(0, 0));*/
+
+//Return Only the Integer
+/*function returnOnlyInteger(arr) {
+	return arr.filter(val => Number.isInteger(val));
+}
+
+console.log(returnOnlyInteger([9, 2, "space", "car", "lion", 16]));
+console.log(returnOnlyInteger(["hello", 81, "basketball", 123, "fox"]));
+console.log(returnOnlyInteger([10, "121", 56, 20, "car", 3, "lion"]));
+console.log(returnOnlyInteger(["String",  true,  3.3,  1]));*/
+
+//Calculate Determinant of a 2x2 Matrix
+/*function calcDeterminant(matrix) {
+	const [a,b,c,d] = matrix.flat();
+  return a*d - b*c;
+}
+
+console.log(calcDeterminant([
+  [1, 2],
+  [3, 4]
+]));
+
+console.log(calcDeterminant([
+  [5, 3],
+  [3, 1]
+]));
+
+console.log(calcDeterminant([
+  [1, 1],
+  [1, 1]
+]));*/
+
+// RegEx: Boundary Assertions II
+
+/*function acceptedWords(arr) {
+	return arr.filter(val => !val.startsWith('C'));
+}
+
+console.log(acceptedWords(["Ducks", "Bears",  "Cats"]));
+console.log(acceptedWords(["cars", "trucks", "planes"]));
+console.log(acceptedWords(["Cans", "Worms", "Bugs", "Cold", "Beans"]));*/
+
+//Exists a Number Higher?
+/*function existsHigher(arr, n) {
+	return arr.some(val => val >= n);
+}
+
+console.log(existsHigher([5, 3, 15, 22, 4], 10));
+console.log(existsHigher([1, 2, 3, 4, 5], 8));
+console.log(existsHigher([4, 3, 3, 3, 2, 2, 2], 4));
+console.log(existsHigher([], 5));*/
+
+//Reverse Coding Challenge #3
+/*function mysteryFunc(arr, num) {
+  return arr.map(val => val % num);
+}
+
+console.log(mysteryFunc([5, 7, 8, 2, 1], 2));
+console.log(mysteryFunc([9, 8, 16, 47], 4));
+console.log(mysteryFunc([17, 11, 99, 55, 23, 1], 5));
+console.log(mysteryFunc([6, 1], 7));
+console.log(mysteryFunc([3, 2, 9], 3));
+console.log(mysteryFunc([48, 22, 0, 19, 33, 100], 10));*/
+
+//Filter by Digit Length
+/*function filterDigitLength(arr, num) {
+	return arr.filter(val => String(val).length === num);
+}
+
+console.log(filterDigitLength([88, 232, 4, 9721, 555], 3));
+console.log(filterDigitLength([2, 7, 8, 9, 1012], 1));
+console.log(filterDigitLength([32, 88, 74, 91, 300, 4050], 1));
+console.log(filterDigitLength([5, 6, 8, 9], 1));*/
+
+//
+/*function checkFactors(factors, num) {
+	return factors.every(val => num % val === 0);
+}
+console.log(checkFactors([2, 3, 4], 12));
+console.log(checkFactors([1, 2, 3, 8], 12));
+console.log(checkFactors([1, 2, 50], 100));
+console.log(checkFactors([3, 6], 9));*/
+
+/*function getExtension(arr) {
+	return arr.map(val => val.split('.')[1]);
+}
+
+console.log(getExtension(["code.html", "code.css"]));
+console.log(getExtension(["project1.jpg", "project1.pdf", "project1.mp3"]));
+console.log(getExtension(["ruby.rb", "cplusplus.cpp", "python.py", "javascript.js"]));*/
+
+/*function mean(nums) {
+	let mean = nums.reduce((p,c) => p + c,0)/nums.length;
+  return +mean.toFixed(1);
+}
+
+console.log(mean([1, 6, 6, 7, 8, 8, 9, 10, 10]));
+console.log(mean([1, 3, 8, 9, 9, 10]));
+console.log(mean([2, 3, 3, 6, 6, 8, 9, 10]));*/
+
+//Product of All Odd Integers
+
+/*function oddProduct(arr) {
+	return arr.filter(n => n % 2 === 1).reduce((p,c) => p * c, 1);
+} 
+
+console.log(oddProduct([3, 4, 1, 1, 5]));
+console.log(oddProduct([5, 5, 8, 2, 4, 32]));
+console.log(oddProduct([1, 2, 1, 2, 1, 2, 1, 2]));*/
+
+//Is Sam with Frodo?
+/*function middleEarth(arr) {
+	let index = arr.findIndex(val => val === "Sam" || val === "Frodo");
+  return arr[index+1] === "Sam" || arr[index+1] === "Frodo";
+}
+
+
+console.log(middleEarth(["Frodo", "Sam", "Gandalf"]));
+console.log(middleEarth(["Frodo", "Saruman", "Sam"]));
+console.log(middleEarth(["Orc", "Sam", "Frodo", "Legolas"]));*/
+
+//Even Number Generator
+
+/*function findEvenNums(num) {
+  const evenNums = []; 
+	for(let i = 1; i <= num; i++){
+    if(i % 2 === 0)
+    evenNums.push(i);
+  }
+  return evenNums;
+}
+
+console.log(findEvenNums(8));
+console.log(findEvenNums(4));
+console.log(findEvenNums(2));*/
+
+/*function last(a, n) {
+  if(n > a.length)
+    return "INVALID";
+	return a.slice(a.length - n);
+}
+
+console.log(last([1, 2, 3, 4, 5], 1));
+console.log(last([4, 3, 9, 9, 7, 6], 3));
+console.log(last([1, 2, 3, 4, 5], 0));
+console.log(last([1, 2, 3, 4, 5], 7));*/
+
+//Say Hello to Guests
+/*function greetPeople(names) {
+	return names.map(val => "Hello "+val).join();
+}
+
+console.log(greetPeople(["Joe"]));
+console.log(greetPeople(["Angela", "Joe"]));
+console.log(greetPeople(["Frank", "Angela", "Joe"]));*/
+
+//Lexicographically First and Last
+/*function firstAndLast(s) {
+  
+  const first = [...s].sort().join('');
+	const last = [...s].sort().reverse().join('');
+  
+  return [first,last];
+}
+
+console.log(firstAndLast("marmite"));
+console.log(firstAndLast("bench"));
+console.log(firstAndLast("scoop")); */
+
+//Same Number of Unique Elements
+/*function same(a1, a2) {
+	return [...new Set(a1)].length === [...new Set(a2)].length;
+}
+
+console.log(same([1, 3, 4, 4, 4], [2, 5, 7]));
+console.log(same([9, 8, 7, 6], [4, 4, 3, 1]));
+console.log(same([2], [3, 3, 3, 3, 3]));*/
+
+//
+/*function seriesResistance(arr) {
+	return arr.reduce((p,c) => p + c,0)+" ohms";
+}
+
+console.log(seriesResistance([1, 5, 6, 3]));
+console.log(seriesResistance([16, 3.5, 6]));
+console.log(seriesResistance([0.5, 0.5]));*/
+
+/*function tuckIn(arr1, arr2) {
+const [a,b] = arr1;
+  return [a,...arr2,b];
+}
+
+console.log(tuckIn([1, 10], [2, 3, 4, 5, 6, 7, 8, 9]));
+console.log(tuckIn([15,150], [45, 75, 35]));
+console.log(tuckIn([[1, 2], [5, 6]], [[3, 4]]));*/
+
+
+/*function minMax(arr) {
+	return [ Math.min(...arr), Math.max(...arr) ];
+}
+
+console.log(minMax([1, 2, 3, 4, 5]));
+console.log(minMax([2334454, 5]));
+console.log(minMax([1]));*/
+
+//Check if One Array can be Nested in Another
+
+/*function canNest(arr1, arr2) {
+	return Math.min(...arr1) > Math.min(...arr2) && Math.max(...arr1) < Math.max(...arr2);
+}
+
+console.log(canNest([1, 2, 3, 4], [0, 6]));
+console.log(canNest([3, 1], [4, 0]));
+console.log(canNest([9, 9, 8], [8, 9]));
+console.log(canNest([1, 2, 3, 4], [2, 3]));*/
+
+//Number Split
+
+/*function numberSplit(n) {
+	return n % 2 === 0 ? [n/2,n/2] : [Math.floor(n/2), Math.ceil(n/2)];
+}
+
+console.log(numberSplit(4));
+console.log(numberSplit(10));
+console.log(numberSplit(11));
+console.log(numberSplit(-9));*/
+
+
+//Filter out Strings from an Array
+/*function filterArray(arr) {
+	return arr.filter(n => Number.isInteger(n));
+}
+
+console.log(filterArray([1, 2, "a", "b"]));
+console.log(filterArray([1, "a", "b", 0, 15]));
+console.log(filterArray([1, 2, "aasf", "1", "123", 123]));*/
+
+//Sort by String Length
+
+/*function sortByLength(arr) {
+	return arr.sort((a,b) => a.length - b.length);
+}
+console.log(sortByLength(["a", "ccc", "dddd", "bb"]));
+console.log(sortByLength(["apple", "pie", "shortcake"]));
+console.log(sortByLength(["may", "april", "september", "august"]));
+console.log(sortByLength([]));*/
+
+//Sum of Cubes
+/*function sumOfCubes(nums) {
+	return nums.reduce((p,c) => p + (c**3),0);
+}
+console.log(sumOfCubes([1, 5, 9]));
+console.log(sumOfCubes([3, 4, 5]));
+console.log(sumOfCubes([2]));
+console.log(sumOfCubes([]));*/
+
+//Even All the Way
+
+/*function getOnlyEvens(nums) {
+	return nums.filter((n,i) => n % 2 === 0 && i % 2 === 0);
+}
+console.log(getOnlyEvens([1, 3, 2, 6, 4, 8]));
+console.log(getOnlyEvens([0, 1, 2, 3, 4]));
+console.log(getOnlyEvens([1, 2, 3, 4, 5]));*/
+
+//Is the Average of All Elements a Whole Number?
+/*function isAvgWhole(arr) {
+let avg = arr.reduce((p,c) => p + c,0)/arr.length;
+  return Number.isInteger(avg);
+}
+
+console.log(isAvgWhole([1, 3]));
+console.log(isAvgWhole([1, 2, 3, 4]));
+console.log(isAvgWhole([1, 5, 6]));
+console.log(isAvgWhole([1, 1, 1]));
+console.log(isAvgWhole([9, 2, 2, 5]));*/
+
+//Rotate the Array by One
+
+/*function rotateByOne(arr) {
+	return arr.splice(arr.length - 1).concat(arr);
+}	
+console.log(rotateByOne([1, 2, 3, 4, 5]));
+console.log(rotateByOne([6, 5, 8, 9, 7]));
+console.log(rotateByOne([20, 15, 26, 8, 4]));*/
+
+//Rotate the Array by n
+
+/*function rotateByN(arr,n) {
+	return arr.splice(arr.length - n).concat(arr);
+}	
+
+console.log(rotateByN([1, 2, 3, 4, 5],2));*/
+
+/*function integerBoolean(n) {
+	return [...n].map(val => Boolean(+val));
+}
+
+console.log(integerBoolean("100101"));
+console.log(integerBoolean("10"));
+console.log(integerBoolean("001"));*/
+
+/*function nothingIsNothing(...args) {
+	return args.every(val => val);
+}
+console.log(nothingIsNothing(0, false, undefined, null));
+console.log(nothingIsNothing(33, "Hello",  true,  []));
+console.log(nothingIsNothing(true, false));*/
+
+//YouTube Upload Count
+
+/*function uploadCount(dates, month) {
+	return dates.filter(val => val.includes(month));
+}
+
+console.log(uploadCount(["Sept 22", "Sept 21", "Oct 15"], "Sept"));
+console.log(uploadCount(["Sept 22", "Sept 21", "Oct 15"], "Oct"));*/
+
+//Where is Bob!?!
+/*function findBob(names) {
+	return names.findIndex(val => val === 'Bob');
+}
+
+console.log(findBob(["Jimmy", "Layla", "Bob"]));
+console.log(findBob(["Bob", "Layla", "Kaitlyn", "Patricia"]));
+console.log(findBob(["Jimmy", "Layla", "James"]));*/
+
+//Calculate the Profit
+/*function profit(info) {
+	const { costPrice, sellPrice, inventory } = info;
+  let profit =  (sellPrice - costPrice) * inventory; 
+  return Math.round(profit);
+}
+
+console.log(profit({
+  costPrice: 32.67,
+  sellPrice: 45.00,
+  inventory: 1200
+}));
+
+console.log(profit({
+  costPrice: 225.89,
+  sellPrice: 550.00,
+  inventory: 100
+}));
+
+console.log(profit({
+  costPrice: 2.77,
+  sellPrice: 7.95,
+  inventory: 8500
+}));*/
+
+//Total Number of Unique Characters
+
+/*function countUnique(s1, s2) {
+	return new Set(s1.concat(s2)).size;
+}
+
+console.log(countUnique("apple", "play"));
+console.log(countUnique("sore", "zebra"));
+console.log(countUnique("a", "soup"));*/
+
+//Purge and Organize
+
+/*function uniqueSort(arr) {
+	return [ ...new Set(arr)].sort((a,b) => a - b);
+}
+
+console.log(uniqueSort([1, 2, 4, 3]));
+console.log(uniqueSort([1, 4, 4, 4, 4, 4, 3, 2, 1, 2]));
+console.log(uniqueSort([6, 7, 3, 2, 1]));*/
+
+//Assign Person to Occupation
+/*const names = ["Dennis", "Vera", "Mabel", "Annette", "Sussan"];
+const jobs = ["Butcher", "Programmer", "Doctor", "Teacher", "Lecturer"];
+
+function assignPersonToJob(names, jobs) {
+	const person = {};
+  names.forEach((val,i) => person[val] = jobs[i]);
+  return person;
+}
+
+console.log(assignPersonToJob(names, jobs));*/
+//Remove Repeated Characters
+/*function unrepeated(str) {
+	return [...new Set([...str])].join('');
+}
+console.log(unrepeated("hello"));
+console.log(unrepeated("aaaaa"));
+console.log(unrepeated("WWE!!!"));
+console.log(unrepeated("call 911"));*/
+
+//Return an Array of Subarrays
+
+/*function matrix(x, y, z) {
+ return Array.from({length:x},() => 
+            Array.from({length:y}, () => z));
+}
+
+console.log(matrix(3, 2, 3));
+console.log(matrix(2, 1, "edabit"));
+console.log(matrix(3, 2, 0));
+*/
+//Sum of Odd and Even Numbers
+/*function sumOddAndEven(arr) {
+	let even = arr.filter(n => n % 2 === 0).reduce((p,c) => p + c,0);
+  let odd = arr.filter(n => n % 2 === 1).reduce((p,c) => p + c,0);
+  
+  return [even,odd];
+}
+
+console.log(sumOddAndEven([1, 2, 3, 4, 5, 6]));
+console.log(sumOddAndEven([-1, -2, -3, -4, -5, -6]));
+console.log(sumOddAndEven([0, 0]));*/
+
+/*function countNumber(arr){
+  return arr.flat(Infinity).filter(val => typeof(val) === "number").length;
+}
+
+console.log(countNumber([["", 17.2, 5, "edabit"]]));
+console.log(countNumber([[[[[2, 14]]], 2, 3, 4]]));
+console.log(countNumber([["balkot"]]));*/
+
+//Count the Letters and Digits
+
+/*function countAll(str) {
+  const alphanumeric = {};
+let letters = str.match(/[a-z]/gi).length;
+ // let nums = str.match(/[0-9]/gi).length ?? 0;
+  let nums = 0;
+  
+  alphanumeric.LETTERS = letters;
+  alphanumeric.DIGITS = nums;
+  
+  return alphanumeric;
+}
+
+console.log(countAll("Hello World"));*/
+
+//Sum Fractions
+
+/*function sumFractions(arr) {
+	return arr.map(val => Math.round(val[0]/val[1]))
+  .reduce((p,c) => p + c,0);
+}*/
+
+
+//console.log(sumFractions([[18, 13], [4, 5]]));
+//console.log(sumFractions([[36, 4], [22, 60]]));
+//console.log(sumFractions([[11, 2], [3, 4], [5, 4], [21, 11], [12, 6]]));
+
+//Letters Shared between Two Words
+/*function sharedLetters(str1, str2) {
+	//return str1.match(str2);
+ let st1 = [...new Set([...str1])];
+ let st2 = [...new Set([...str2])];
+ return st1.length >= st2.length 
+   ? 
+   st1.filter(ch => st2.includes(ch)).length
+  : st2.filter(ch => st1.includes(ch)).length
+}
+
+//console.log(sharedLetters("apple", "meaty"));
+//console.log(sharedLetters("fan", "forsook"));
+//console.log(sharedLetters("spout", "shout"));*/
+
+//Total Sales of Product
+
+/*function totalSales(sales, product) {
+	let index = sales[0].findIndex(val => val === product);
+  return index >= 0 
+   ? sales.slice(1).map(val => val[index]).reduce((p,c) => p + c,0)
+  :  "Product not found";
+}
+
+console.log(totalSales([
+  ["A", "B", "C"],
+  [ 2 ,  7 ,  1 ],
+  [ 3 ,  6 ,  6 ],
+  [ 4 ,  5 ,  5 ]
+], "A"));
+
+console.log(totalSales([
+  ["A", "B", "C"],
+  [ 2 ,  7 ,  1 ],
+  [ 3 ,  6 ,  6 ],
+  [ 4 ,  5 ,  5 ]
+], "C"));
+
+console.log(totalSales([
+  ["A", "B", "C"],
+  [ 2 ,  7 ,  1 ],
+  [ 3 ,  6 ,  6 ],
+  [ 4 ,  5 ,  5 ]
+], "D"));*/
+
+//Decimal to Binary Using Stack
+
+/*function toBinary(n){
+  let val = n;
+  const arr = [];
+  while(val !== 0 || val !== 1){
+   arr.push(val % 2);
+   val = Math.floor(val/2);
+  }
+  arr.push(val);
+  return arr;
+}
+
+console.log(toBinary(17));*/
+
+/*function addition (a,b){
+  return a + b;
+}
+
+console.log(addition(3, 2));
+console.log(addition(-3, -6));
+console.log(addition(7, 3));*/
+
+/*function addition(num){
+  return num + 1;
+}
+console.log(addition(0));
+console.log(addition(9));
+console.log(addition(-3));*/
+
+/*function calcAge(age){
+  return age * 365;
+}
+
+console.log(calcAge(65));
+console.log(calcAge(0));
+console.log(calcAge(20));*/
+
+/*function squared(b){
+  return b**2;
+}
+console.log(squared(5));
+console.log(squared(9));
+console.log(
+squared(100));*/
+
+/*function footballPoints(wins, draws, losses) {
+	return (wins * 3) + (draws * 1) + (losses * 0);
+}
+console.log(footballPoints(3, 4, 2));
+console.log(footballPoints(5, 0, 2));
+console.log(footballPoints(0, 0, 1));*/
+
+/*function calculator(str) {
+	return eval(str);
+}
+console.log(calculator("23+4"));
+console.log(calculator("45-15"));
+console.log(calculator("13+2-5*2"));
+console.log(calculator("49/7*2-3"));*/
+
+/*function calculator(str){
+  let result = Function("return "+str)();
+  return result;
+}
+console.log(calculator("23+4"));
+console.log(calculator("45-15"));
+console.log(calculator("13+2-5*2"));
+console.log(calculator("49/7*2-3"));*/
+
+/*function divisible(num) {
+	//return num % 100 === 0;
+  //return !Boolean(num % 100);
+  return Boolean(!(num % 100));
+}
+console.log(divisible(1));
+/*console.log(divisible(1000));
+console.log(divisible(100));*/
+
+/*function area(h,w){
+  return h > 0 && w > 0 ? h * w : -1;
+}
+
+console.log(area(3, 4));
+console.log(area(10, 11));
+console.log(area(-1, 5));
+console.log(area(0, 2));*/
+
+/*function posCom(num) {
+	//return 2**num;
+  return Math.pow(2,num);
+}
+console.log(posCom(1));
+console.log(posCom(3));
+console.log(posCom(10));*/
+
+/*function imposterFormula(i, p) {
+	return Math.round(100 * (i / p))+"%";
+}
+
+console.log(imposterFormula(1, 10));
+console.log(imposterFormula(2, 5));
+console.log(imposterFormula(1, 8));*/
+
+/*function leapYear(year) {
+	return (year % 4 === 0 || year % 400 === 0) && year % 100 !== 0; 
+}
+
+console.log(leapYear(1990));
+console.log(leapYear(1924));
+console.log(leapYear(2021));
+
+console.log(leapYear(2020));
+console.log(leapYear(2021));
+console.log(leapYear(1968));*/
+
+/*function stackBoxes(n) {
+	return n ** n;
+}
+console.log(stackBoxes(1));
+console.log(stackBoxes(2));
+console.log(stackBoxes(0));*/
+
+/*function howManyStickers(n) {
+	return (n**2) * 6;
+}
+
+console.log(howManyStickers(1));
+console.log(howManyStickers(2));
+console.log(howManyStickers(3));*/
+
+/*function starNumber(n) {
+	return ((6*n)*(n-1)) + 1;
+}
+
+console.log(starNumber(2));
+console.log(starNumber(3));
+console.log(starNumber(5));
+*/
+
+/*function equalSlices(total, people, each) {
+	return total >= (people * each);
+}
+
+console.log(equalSlices(11, 5, 2));
+console.log(equalSlices(11, 5, 3));
+console.log(equalSlices(8, 3, 2));
+console.log(equalSlices(8, 3, 3));
+console.log(equalSlices(24, 12, 2));*/
+
+/*function colorInvert(rgb) {
+	return rgb.map(v => 255 - v);
+}
+
+console.log(colorInvert([255, 255, 255]));
+console.log(colorInvert([0, 0, 0]));
+console.log(colorInvert([165, 170, 221]));*/
+
+/*function divisibleByB(a, b) {
+	//let n = a > b ? (a + 1) : (b + 1);
+  let n = a > b ? a + 1 : b + 1;
+  while(n % a !== 0 && n % b !== 0){
+    n = n + 1;
+  }
+  return n;
+}
+
+console.log(divisibleByB(17, 8));
+console.log(divisibleByB(98, 3));
+console.log(divisibleByB(14, 11));*/
+
+/*function nextSquare(n) {
+  if( Math.sqrt(n) % 1 !== 0)
+    return null;
+	let m = Math.sqrt(n) + 1;
+  
+  while(Math.sqrt(m**m) % 1 !== 0){
+    m = m + 1;
+  }
+  
+  return m*m;
+  
+}
+console.log(nextSquare(121));
+console.log(nextSquare(625));
+console.log(nextSquare(114));*/
+
+/*function perfectRoots(n) {
+return Math.sqrt(n) % 1 === 0;
+}
+console.log(perfectRoots(256));
+console.log(perfectRoots(1000));
+console.log(perfectRoots(6561));*/
+
+/*function twoDigitSum(n) {
+	let a = n % 10;
+  let b = Math.floor(n/10);
+  return a + b;
+}
+
+console.log(twoDigitSum(45));
+console.log(twoDigitSum(38));
+console.log(twoDigitSum(67));*/
+
+/*function calculate(num1, num2, op) {
+	return eval((num1 + op + num2));
+}
+console.log(calculate(4, 9, "+"));
+console.log(calculate(12, 5, "-"));
+console.log(calculate(6, 3, "*"));
+console.log(calculate(25, 5, "/"));
+console.log(calculate(25, 5, "/"));*/
+
+/*function justAnotherSumProblem(a, b) {
+	let n = 0;
+  for(i = a; i <= b; i++){
+    n = n + i;
+  }
+  return n;
+}
+
+console.log(justAnotherSumProblem(-10, 1));
+console.log(justAnotherSumProblem(-20, 5));
+console.log(justAnotherSumProblem(90, 45));*/
+
+
+
+/*function cubeSquareRoot(num) {
+	let n =  Math.sqrt(num);
+  return n**3;
+}
+
+console.log(cubeSquareRoot(81));
+console.log(cubeSquareRoot(1646089));
+console.log(cubeSquareRoot(695556));*/
+
+/*function abcmath(a, b, c) {
+	for(let i = 0; i < b; i++){
+   // a = a + a;
+    a = 2*a;
+  }
+    return a % c === 0;
+}
+
+console.log(abcmath(42, 5, 10));
+console.log(abcmath(5, 2, 1));
+console.log(abcmath(1, 2, 3));*/
+
+/*function matchHouses(step) {
+	return (step * 6) - (step - 1);
+}
+
+console.log(matchHouses(1));
+console.log(matchHouses(4));
+console.log(matchHouses(87));*/
+
+/*function sumOfCubes(nums) {
+	return nums.map(v => v**3).reduce((p,c) => p + c,0);
+}
+
+console.log(sumOfCubes([1, 5, 9]));
+console.log(sumOfCubes([3, 4, 5]));
+console.log(sumOfCubes([2]));
+console.log(sumOfCubes([]));*/
+
+//Find the Smallest and Biggest Numbers
+
+/*function minMax(arr) {
+	return [ Math.min(...arr), Math.max(...arr) ]
+}
+
+console.log(minMax([1, 2, 3, 4, 5]));
+console.log(minMax([2334454, 5]));
+console.log(
+minMax([1]));*/
+
+//Check if One Array can be Nested in Another
+
+/*function canNest(arr1, arr2) {
+	return Math.min(...arr1) > Math.min(...arr2)  
+  &&
+   Math.max(...arr1) < Math.max(...arr2);
+}
+
+console.log(canNest([1, 2, 3, 4], [0, 6]));
+console.log(canNest([3, 1], [4, 0]));
+console.log(canNest([9, 9, 8], [8, 9]));
+console.log(canNest([1, 2, 3, 4], [2, 3]));*/
+
+//Sum of Resistance in Series Circuits
+/*function seriesResistance(arr) {
+	return arr.reduce((p,c) => p + c, 0) + " ohms";
+}
+
+console.log(seriesResistance([1, 5, 6, 3]));
+console.log(seriesResistance([16, 3.5, 6]));
+console.log(
+seriesResistance([0.5, 0.5]));*/
+
+/*function tuckIn(arr1, arr2) {
+	return [arr1.at(0), ...arr2, arr1.at(-1)];
+}
+
+console.log(tuckIn([1, 10], [2, 3, 4, 5, 6, 7, 8, 9]));
+console.log(tuckIn([15,150], [45, 75, 35]));
+console.log(
+tuckIn([[1, 2], [5, 6]], [[3, 4]]));*/
+
+//Number Split
+
+/*function numberSplit(n) {
+if(n % 2 === 0)
+  return [ n/2, n/2 ];
+  
+ /* let a = Math.round(n/2);
+  let b = a - 1;
+  
+  return [ b, a ];
+}
+
+console.log(numberSplit(4));
+console.log(
+numberSplit(10));
+
+console.log(numberSplit(11));
+
+console.log(numberSplit(-9));*/
+
+//Filter out Strings from an Array
+
+/*function filterArray(arr) {
+ return arr.filter(val => Number.isInteger(val));
+}
+
+console.log(filterArray([1, 2, "a", "b"]));
+console.log(filterArray([1, "a", "b", 0, 15]));
+console.log(filterArray([1, 2, "aasf", "1", "123", 123]));*/
+
+//Baseball Batting Average
+/*function battingAvg(arr) {
+  let no_of_hits = 0, no_of_official_at_bats = 0;
+	arr.map((val) => {
+    let [a,b] = val;
+    no_of_hits = no_of_hits + a;
+    no_of_official_at_bats = no_of_official_at_bats + b;
+  })
+  return (no_of_hits/no_of_official_at_bats).toFixed(3);
+}
+
+console.log(battingAvg([[0, 0], [1, 3], [2, 2], [0, 4], [1, 5]]));
+console.log(battingAvg([[2, 5], [2, 3], [0, 3], [1, 5], [2, 4]]));
+console.log(battingAvg([[2, 3], [1, 5], [2, 4], [1, 5], [0, 5]]));*/
+
+//Sort by String Length
+
+/*function sortByLength(arr) {
+	return arr.sort((a,b) => a.length - b.length);
+}
+
+console.log(sortByLength(["a", "ccc", "dddd", "bb"]));
+console.log(sortByLength(["apple", "pie", "shortcake"]));
+console.log(sortByLength(["may", "april", "september", "august"]));
+console.log(sortByLength([]));*/
+
+//Sum of Cubes
+
+/*function sumOfCubes(nums) {
+	return nums.reduce((p,c) => p + c**3, 0);
+}
+
+console.log(sumOfCubes([1, 5, 9]));
+console.log(sumOfCubes([3, 4, 5]));
+console.log(sumOfCubes([2]));
+console.log(sumOfCubes([]));*/
+
+//Even All the Way
+
+/*function getOnlyEvens(nums) {
+	return nums.filter((val,i) => val % 2 === 0 && i % 2 === 0);
+}
+
+console.log(getOnlyEvens([1, 3, 2, 6, 4, 8]));
+console.log(getOnlyEvens([0, 1, 2, 3, 4]));
+console.log(getOnlyEvens([1, 2, 3, 4, 5]));*/
+
+//Burglary Series (10): Calculate Difference
+
+/*function calculateDifference(obj, limit) {
+	return Object.values(obj).reduce((p,c) => p + c, 0) - limit;
+}
+console.log(calculateDifference({ "baseball bat": 20 }, 5));
+console.log(calculateDifference({ skate: 10, painting: 20 }, 19));
+console.log(calculateDifference({ skate: 200, painting: 200, shoes: 1 }, 400));*/
+
+//Is the Average of All Elements a Whole Number?
+/*function isAvgWhole(arr) {
+	let avg = arr.reduce((p,c) => p + c, 0)/arr.length;
+  return Number.isInteger(avg) && avg >= 0;
+}
+
+console.log(isAvgWhole([1, 3]));
+console.log(isAvgWhole([1, 2, 3, 4]));
+console.log(isAvgWhole([1, 5, 6]));
+console.log(isAvgWhole([1, 1, 1]));
+console.log(isAvgWhole([9, 2, 2, 5]));*/
+
+//Absolute Sum
+/*function getAbsSum(arr) {
+	//return arr.map(v => Math.abs(v)).reduce((p,c) => p + c, 0);
+  return arr.reduce((p,c) => p + Math.abs(c), 0)
+}
+
+console.log(getAbsSum([2, -1, 4, 8, 10]));
+console.log(getAbsSum([-3, -4, -10, -2, -3]));
+console.log(getAbsSum([2, 4, 6, 8, 10]));
+console.log(getAbsSum([-1]));*/
+
+//Sort Numbers in Ascending Order
+/*function sortNumsAscending(arr) {
+  if(!arr)
+    return [];
+	return arr.sort((a,b) => a - b);
+}
+
+console.log(sortNumsAscending([1, 2, 10, 50, 5]));
+console.log(sortNumsAscending([80, 29, 4, -95, -24, 85]));
+console.log(sortNumsAscending(null));
+console.log(sortNumsAscending([]));*/
+
+//Find the Largest Numbers in a Group of Arrays
+
+/*function findLargestNums(arr) {
+	return arr.map(v => Math.max(...v));
+}
+
+console.log(findLargestNums([[4, 2, 7, 1], [20, 70, 40, 90], [1, 2, 0]]));
+console.log(findLargestNums([[-34, -54, -74], [-32, -2, -65], [-54, 7, -43]]));
+console.log(findLargestNums([[0.4321, 0.7634, 0.652], [1.324, 9.32, 2.5423, 6.4314], [9, 3, 6, 3]]));*/
+
+//Transform into an Array with No Duplicates
+
+/*function set(arr) {
+	let newArr = [...new Set(arr)];
+  return newArr.sort((a,b) => a - b);
+}
+
+console.log(set([1, 3, 3, 5, 5]));
+console.log(set([4, 4, 4, 4]));
+console.log(set([5, 7, 8, 9, 10, 15]));
+console.log(set([3, 3, 3, 2, 1]));*/
+
+//Phone Number Formatting
+/*function formatPhoneNumber(numbers) {
+	let n1 =  numbers.slice(0,3).join('');
+  let n2 = numbers.slice(3,6).join('');
+  let n3 = numbers.slice(6).join('');
+  return `(${n1}) ${n2}-${n3}`;
+}
+console.log(formatPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]));
+console.log(formatPhoneNumber([5, 1, 9, 5, 5, 5, 4, 4, 6, 8]));
+console.log(formatPhoneNumber([3, 4, 5, 5, 0, 1, 2, 5, 2, 7]));*/
+
+/*function amplify(num) {
+	return Array.from({ length: num }, (v, i) => (i + 1) % 4 == 0 ? (i + 1) * 10 : i + 1); 
+}
+
+console.log(amplify(4));
+console.log(amplify(3));
+console.log(amplify(25));*/
+
+//Secret Society
+
+/*function societyName(friends) {
+	return friends.map(v => v.at(0)).sort().join('');
+}
+
+console.log(societyName(["Adam", "Sarah", "Malcolm"]));
+console.log(societyName(["Harry", "Newt", "Luna", "Cho"]));
+console.log(societyName(["Phoebe", "Chandler", "Rachel", "Ross", "Monica", "Joey"]));*/
+
+//Array Operation
+/*function arrayOperation(x, y, n) {
+	return Array.from({ length : (y - x) + 1 }, (v,i) => x + i)
+    .filter(v => v % n === 0);
+}
+
+console.log(arrayOperation(1, 10, 3));
+console.log(arrayOperation(7, 9, 2));
+console.log(arrayOperation(15, 20, 7));*/
+
+//Maximum Possible Total
+
+/*function maxTotal(nums) {
+	return nums.sort((a,b) => a - b).reverse().slice(0,5).reduce((p,c) => p + c, 0);
+}
+
+console.log(maxTotal([1, 1, 0, 1, 3, 10, 10, 10, 10, 1]));
+console.log(maxTotal([0, 0, 0, 0, 0, 0, 0, 0, 0, 100]));
+console.log(maxTotal([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));*/
+
+//Omnipresent Value
+
+/*function isOmnipresent(arr, val) {
+	return arr.every(num => num.includes(val))
+}
+
+console.log(isOmnipresent([[1, 1], [1, 3], [5, 1], [6, 1]], 1));
+console.log(isOmnipresent([[1, 1], [1, 3], [5, 1], [6, 1]], 6));
+console.log(isOmnipresent([[5], [5], [5], [6, 5]], 5));
+console.log(isOmnipresent([[5], [5], [5], [6, 5]], 6));*/
+
+
+/*function toArray(num) {
+	return String(num).split('');
+}
+
+function toNumber(arr) {
+	return arr.join('')
+}
+
+console.log(toArray(235));
+console.log(toNumber([2, 3, 5]));*/
+
+//Count Ones in a 2D Array
+
+/*function countOnes(matrix) {
+	return matrix.flat().filter(val => val === 1).length;
+}
+
+console.log(countOnes([
+  [1, 0],
+  [0, 0]
+]));
+
+console.log(countOnes([
+  [1, 1, 1],
+  [0, 0, 1],
+  [1, 1, 1]
+]));
+
+console.log(countOnes([
+  [1, 2, 3],
+  [0, 2, 1],
+  [5, 7, 33]
+]));*/
+
+//Is One Array a Subset of Another?
+/*function isSubset(arr1, arr2) {
+	return arr1.every(v => arr2.includes(v));
+}
+
+console.log(isSubset([3, 2, 5], [5, 3, 7, 9, 2]));
+console.log(isSubset([8, 9], [7, 1, 9, 8, 4, 5, 6]));
+console.log(isSubset([1, 2], [3, 5, 9, 1]));*/
+
+/*function dropRight(arr, num = 1) {
+	arr.splice(-1 , num);
+  return arr;
+}
+
+console.log(dropRight([1, 2, 3]));*/
+//console.log(dropRight([1, 2, 3], 2));
+//console.log(dropRight([1, 2, 3], 5));
+//console.log(dropRight([1, 2, 3], 0));
+
+/*function chatroomStatus(users) {
+	if(!users.length)
+    return "no one online";
+  if(users.length === 1)
+    return `${users[0]}`;
+  if(users.length === 2)
+    return `${users[0]} and ${users[1]}`;
+  return `${users[0]}, ${users[1]} and ${users.length - 2} more online`
+}
+
+console.log(chatroomStatus([]));
+console.log(chatroomStatus(["paRIE_to"]));
+console.log(chatroomStatus(["s234f", "mailbox2"]));
+console.log(chatroomStatus(["pap_ier44", "townieBOY", "panda321", "motor_bike5", "sandwichmaker833", "violinist91"]));*/
+
+/*function spelling(str) {
+	const arr = [];
+  for(let i = 0; i < str.length; i++){
+    arr.push(str.slice(0,i+1));
+  }
+  return arr;
+}
+
+console.log(spelling("bee"));
+console.log(spelling("happy"));
+console.log(spelling("eagerly"));*/
+
+/*function spelling(str) {
+	return Array.from({ length: str.length }, (v, i) => 
+  str.slice(0, i+1));
+}
+
+console.log(spelling("bee"));
+console.log(spelling("happy"));
+console.log(spelling("eagerly"));*/
+
+/*function charIndex(word, char) {
+  if(word.indexOf(char) == -1 || word.lastIndexOf(char) == -1)
+    return undefined;
+	return [word.indexOf(char), word.lastIndexOf(char)];
+}
+
+console.log(charIndex("hello", "l"));
+console.log(charIndex("circumlocution", "c"));
+console.log(charIndex("happy", "h"));
+console.log(charIndex("happy", "e"));*/
+
+/*function mauriceWins(mSnails, sSnails) {
+	return mSnails[0] < sSnails[2]
+  &&
+    mSnails[1] > sSnails[0]
+  &&
+    mSnails[2] > sSnails[1]
+}
+
+console.log(mauriceWins([3, 5, 10], [4, 7, 11]));
+console.log(mauriceWins([6, 8, 9], [7, 12, 14]));
+console.log(
+mauriceWins([1, 8, 20], [2, 9, 100]));*/
+
+
+/*function countTrue(arr) {
+	return arr.filter(val => val).length;
+}
+console.log(countTrue([true, false, false, true, false]));
+console.log(countTrue([false, false, false, false]));
+console.log(countTrue([]));*/
+
+/*function compact(arr) {
+	return arr.filter(v => v);
+}
+console.log(compact([0, 1, false, 2, "", 3]));*/
+
+/*function toArray(obj) {
+	return Object.entries(obj);
+}
+console.log(toArray({ a: 1, b: 2 }));
+console.log(toArray({ shrimp: 15, tots: 12 }));
+console.log(
+toArray({}));*/
+//Concatenate Variable Number of Input Arrays
+
+/*function concat(...args) {
+	return args.flat();
+}
+
+console.log(concat([1, 2, 3], [4, 5], [6, 7]));
+console.log(concat([1], [2], [3], [4], [5], [6], [7]));
+console.log(concat([1, 2], [3, 4]));
+console.log(concat([4, 4, 4, 4, 4]));*/
+
+/*function changeEnough(change, amountDue) {
+	
+}*/
+
+/*function arrayOfMultiples (num, length) {
+	return Array.from({length:length},(v,i) => num * (i+1));
+}
+
+console.log(arrayOfMultiples(7, 5));
+console.log(arrayOfMultiples(12, 10));
+console.log(arrayOfMultiples(17, 6));*/
+
+//Convert Key, Values in an Object to Array
+/*function objectToArray(obj) {
+	return Object.entries(obj);
+}
+
+console.log(objectToArray({
+  D: 1,
+  B: 2,
+  C: 3
+}));
+
+console.log(
+objectToArray({
+  likes: 2,
+  dislikes: 3,
+  followers: 10
+}));*/
+
+//Sort the Unsortable
+
+/*function sortIt(arr) {
+	return arr.sort((a,b) => a - b);
+}
+
+console.log(sortIt([4, 1, 3]));
+console.log(sortIt([[4], [1], [3]]));
+console.log(sortIt([4, [1], 3]));
+console.log(sortIt([[4], 1, [3]]));
+console.log(sortIt([[3], 4, [2], [5], 1, 6]));*/
+
+//Find the Second Largest Number
+/*function secondLargest(arr) {
+	let sortedArray = arr.sort((a,b) => a - b);   
+  return sortedArray.at(-2);
+}
+console.log(secondLargest([10, 40, 30, 20, 50]));
+console.log(secondLargest([25, 143, 89, 13, 105]));
+console.log(secondLargest([54, 23, 11, 17, 10]));*/
+
+//Clone an Array
+/*function clone(arr) {
+return [...arr, arr];
+}
+console.log(clone([1, 1]));
+console.log(clone([1, 2, 3]));
+console.log(clone(["x", "y"]));*/
+/*function testJackpot(result) {
+	return result.every(v => v === result[0]);
+}
+
+console.log(testJackpot(["@", "@", "@", "@"]));
+console.log(testJackpot(["abc", "abc", "abc", "abc"]));
+console.log(testJackpot(["SS", "SS", "SS", "SS"]));
+console.log(testJackpot(["&&", "&", "&&&", "&&&&"]));
+console.log(testJackpot(["SS", "SS", "SS", "Ss"]));*/
+
+/*function marathonDistance(d) {
+	return d.reduce((p,c) => p + Math.abs(c), 0) === 25;
+}
+
+console.log(marathonDistance([1, 2, 3, 4]));
+console.log(marathonDistance([1, 9, 5, 8, 2]));
+console.log(marathonDistance([-6, 15, 4]));*/
+
+//Finding Nemo
+
+/*function findNemo(sentence) {
+	return sentence.split(' ').includes("Nemo")
+  ?
+    `I found Nemo at ${sentence.split(' ').indexOf('Nemo') + 1}!`
+    : "I can't find Nemo :(";
+ //return sentence.split(' ').indexOf('Nemo');
+}*/
+
+/*console.log(findNemo("I am finding Nemo !"));
+console.log(findNemo("Nemo is me"));
+console.log(findNemo("I Nemo am"));*/
+//Instant JAZZ
+/*function jazzify(arr) {
+	return arr.map(v => v.includes('7') ? v : v + '7');
+}
+console.log(jazzify(["G", "F", "C"]));
+console.log(jazzify(["F7", "E7", "A7", "Ab7", "Gm7", "C7"]));
+console.log(jazzify([]));*/
+
+//Total Volume of All Boxes
+/*function totalVolume(...boxes) {
+	//return boxes;
+  return boxes.map(m => {
+    let prd = 1;
+    m.forEach(n => {
+      prd = prd * n;
+    })
+    return prd;
+  })
+    .reduce((p,c) => p + c, 0);
+}
+
+console.log(totalVolume([4, 2, 4], [3, 3, 3], [1, 1, 2], [2, 1, 1]));
+console.log(totalVolume([2, 2, 2], [2, 1, 1]));
+console.log(totalVolume([1, 1, 1]));*/
+
+//Index Multiplier
+
+/*function indexMultiplier(arr) {
+	return arr.map((v,i) => v * i)
+  .reduce((p,c) => p + c, 0);
+}
+console.log(indexMultiplier([1, 2, 3, 4, 5]));
+console.log(indexMultiplier([-3, 0, 8, -6]));*/
+
+//Let's Sort This Array!
+
+/*function ascDesNone(arr, str) {
+	switch(str){
+      case "Asc": return arr.sort((a,b) => a - b);
+      case "Des": return arr.sort((a,b) => a - b).reverse();
+      case "None": return arr;
+  }
+}
+console.log(ascDesNone([4, 3, 2, 1], "Asc" ));
+console.log(
+ascDesNone([7, 8, 11, 66], "Des"));
+console.log(ascDesNone([1, 2, 3, 4], "None"));*/
+
+//Special Arrays
+/*function isSpecialArray(arr) {
+	return arr.every((v, i) => v % 2 === 0 && i % 2 === 0
+    || v % 2 !== 0 && i % 2 !== 0);
+}
+
+console.log(isSpecialArray([2, 7, 4, 9, 6, 1, 6, 3]));
+console.log(isSpecialArray([2, 7, 9, 1, 6, 1, 6, 3]));
+console.log(isSpecialArray([2, 7, 8, 8, 6, 1, 6, 3]));*/
+
+//Sum of Number Elements in an Array
+/*function numbersSum(arr) {
+	return arr.filter(v => typeof(v) === "number")
+  .reduce((p,c) => p + c, 0);
+}
+
+console.log(numbersSum([1, 2, "13", "4", "645"]));
+console.log(numbersSum([true, false, "123", "75"]));
+console.log(numbersSum([1, 2, 3, 4, 5, true]));*/
+
+//Currying Functions
+
+/*function multiply(arr){
+  return (n) => arr.map(v => v * n);
+}
+
+console.log(multiply([1, 2, 3])(2));
+console.log(multiply([4, 6, 5])(10));
+console.log(multiply([1, 2, 3])(0));*/
+
+/*function lineLength([x1, y1], [x2, y2]) {
+	return Math.hypot((x2-x1), (y2-y1)).toFixed(2);
+}
+console.log(lineLength([15, 7], [22, 11]));
+console.log(
+lineLength([0, 0], [0, 0]));
+console.log(lineLength([0, 0], [1, 1]));*/
+
+//Get Sum of People's Budget
+/*function getBudgets(arr) {
+	return arr.map(obj => obj.budget)
+  .reduce((p,c) => p + c, 0);
+}
+
+console.log(getBudgets([
+  { name: "John", age: 21, budget: 23000 },
+  { name: "Steve",  age: 32, budget: 40000 },
+  { name: "Martin",  age: 16, budget: 2700 }
+]));
+
+console.log(getBudgets([
+  { name: "John",  age: 21, budget: 29000 },
+  { name: "Steve",  age: 32, budget: 32000 },
+  { name: "Martin",  age: 16, budget: 1600 }
+]));*/
+
+//Match the Last Item
+
+/*function matchLastItem(arr) {
+	return arr.slice(0, -1).join('') === arr.at(-1);
+}
+
+console.log(matchLastItem(["rsq", "6hi", "g", "rsq6hig"]));
+console.log(
+matchLastItem([1, 1, 1, "11"]));
+console.log(matchLastItem([8, "thunder", true, "8thundertrue"]));*/
+
+//Burglary Series (01): Calculate Total Losses
+/*const stolenItems = {
+  tv: 30,
+  skate: 20,
+  stereo: 50,
+}
+const stolenItems1 = {
+  painting: 20000,
+}
+const stolenItems2 = {}
+function calculateLosses(obj) {
+	return obj ? Object.values(obj).reduce((p,c) => p + c, 0)
+  : "Lucky you!";
+}
+
+console.log(calculateLosses(stolenItems));
+
+console.log(calculateLosses(stolenItems1));
+
+console.log(calculateLosses(stolenItems2));*/
+
+//Remove Duplicates from an Array
+
+/*function removeDups(arr) {
+	return [...new Set(arr)]
+}
+
+console.log(removeDups([1, 0, 1, 0]));
+console.log(removeDups(["The", "big", "cat"]));
+console.log(removeDups(["John", "Taylor", "John"]));*/
+//Find NaN in an Array
+
+/*function findNaN(number) {
+	return number.findIndex(v => isNaN(v));
+}
+
+console.log(findNaN([1, 2, NaN]))
+console.log(findNaN([NaN, 1, 2, 3, 4]));
+console.log(findNaN([0, 1, 2, 3, 4]));*/
+
+//Mirror Array
+/*function mirror(arr) {
+//	return [...arr, ...arr.slice(0,-1).reverse()]
+  return arr.concat(arr.slice(0,-1).reverse());
+}
+
+console.log(mirror([0, 2, 4, 6]));
+console.log(mirror([1, 2, 3, 4, 5]));
+console.log(
+mirror([3, 5, 6, 7, 8]));*/
+
+//Check if All Values Are True
+
+/*function allTruthy(...args) {
+	return args.every(v => v);
+}
+
+console.log(allTruthy(true, true, true));
+console.log(allTruthy(true, false, true));
+console.log(allTruthy(5, 4, 3, 2, 1, 0));*/
+
+//Factor Chain
+
+/*function factorChain(arr) {
+	//return arr.every((v, i) => arr[i + 1] % v === 0);
+  return arr.slice(0,-1).every((v, i) => arr[i + 1] % v === 0);
+}
+
+console.log(factorChain([1, 2, 4, 8, 16, 32]));
+console.log(factorChain([1, 1, 1, 1, 1, 1]));
+console.log(factorChain([2, 4, 6, 7, 12]));
+console.log(factorChain([10, 1]));*/
+
+/*function reverseArr(num) {
+	return String(num).split('').map(v => Number(v)).reverse();
+}
+console.log(reverseArr(1485979));
+console.log(reverseArr(623478));
+console.log(reverseArr(12345));*/
+
+/*function progressDays(runs) {
+	return runs.filter((v,i) => v < runs[i + 1]).length;
+}
+console.log(progressDays([3, 4, 1, 2]));
+console.log(progressDays([10, 11, 12, 9, 10]));
+console.log(progressDays([6, 5, 4, 3, 2, 9]));
+console.log(progressDays([9, 9]));
+*/
+
+//Purge and Organize
+
+/*function uniqueSort(arr) {
+	return [ ...new Set(arr) ].sort((a,b) => a - b);
+}
+console.log(uniqueSort([1, 2, 4, 3]));
+console.log(uniqueSort([1, 4, 4, 4, 4, 4, 3, 2, 1, 2]));
+/*console.log(uniqueSort([6, 7, 3, 2, 1]));*/
+
+//H4ck3r Sp34k
+
+/*function hackerSpeak(str) {
+	return str.split('').map(
+  v => {
+    if(v === 'a')
+     return v.replace(v, '4');
+    if(v === 'e')
+     return v.replace(v, '3')
+    if(v === 'i')
+     return v.replace(v, '1')
+    if(v === 'o')
+     return v.replace(v, '0')
+    if(v === 's')
+      return v.replace(v, '5')
+    else
+      return v;
+    
+  }).join('')
+}
+console.log(hackerSpeak("javascript is cool"));
+console.log(hackerSpeak("programming is fun"));
+console.log(hackerSpeak("become a coder"));*/
+
+//Capitalize the Names
+
+/*function capMe(arr) {
+	return arr.map(v => v[0].toUpperCase() + v.slice(1, v.length));
+}
+console.log(capMe(["mavis", "senaida", "letty"]));
+console.log(capMe(["samuel", "MABELLE", "letitia", "meridith"]));
+console.log(capMe(["Slyvia", "Kristal", "Sharilyn", "Calista"]));*/
+
+//Return the Sum of the Two Smallest Numbers
+
+/*function sumTwoSmallestNums(arr) {
+	return arr.filter(v => v >= 0)
+    .sort((a,b) => a - b)
+    .slice(0,2)
+    .reduce((p,c) => p + c, 0);
+}
+
+console.log(sumTwoSmallestNums([19, 5, 42, 2, 77]));
+console.log(sumTwoSmallestNums([10, 343445353, 3453445, 3453545353453]));
+console.log(sumTwoSmallestNums([2, 9, 6, -1]));
+console.log(sumTwoSmallestNums([879, 953, 694, -847, 342, 221, -91, -723, 791, -587]));
+console.log(sumTwoSmallestNums([3683, 2902, 3951, -475, 1617, -2385]));*/
+
+/*const parsedURL = /^(\w+)\:\/\/([^\/]+)\/(.*)$/.exec("https://developer.mozilla.org/en-US/Web/JavaScript")
+const [,protocol,host,path] = parsedURL;
+//console.log(parsedURL);
+console.log(protocol);
+console.log(host);
+console.log(path);*/
+
+//Number of Arrays in an Array
+
+/*function numOfSubbarrays(arr) {
+	//return arr.every(v => Array.isArray(v)) 
+  //?  arr.length : 0;
+  return arr.filter(v => Array.isArray(v)).length;
+}
+console.log(numOfSubbarrays([[1, 2, 3]]));
+console.log(numOfSubbarrays([[1, 2, 3], [1, 2, 3], [1, 2, 3]]));
+console.log(numOfSubbarrays([[1, 2, 3], [1, 2, 3], [1, 2, 3], [1, 2, 3]]));
+console.log(numOfSubbarrays([1, 2, 3]));*/
+
+//Zip It, If You Can?
+
+/*function zipIt(women, men) {
+	if(women.length !== men.length)
+    return "sizes don't match";
+  return women.map((nm,i) => [nm, men[i]]);
+}
+console.log(zipIt(["Elise", "Mary"], ["John", "Rick"]));
+console.log(zipIt(["Ana", "Amy", "Lisa"], ["Bob", "Josh"]));
+console.log(zipIt(["Ana", "Amy", "Lisa"], ["Bob", "Josh", "Tim"]));*/
+
+//Sum of Resistance in Parallel Circuits
+/*function parallelResistance(arr) {
+	return (1/arr.reduce((p,c) => p + 1/c, 0)).toFixed(1);
+}
+console.log(parallelResistance([6, 3, 6]));
+console.log(parallelResistance([6, 3]));
+console.log(parallelResistance([10, 20, 10]));
+console.log(parallelResistance([500, 500, 500]));*/
+
+//Function Function
+/*function factory(num) {
+	return (arr) => arr.map(n => n / num);
+}
+console.log(factory(15)([30, 45, 60]));
+console.log(factory(2)([2, 4, 6]));*/
+
+//Odd Up, Even Down — N Times
+
+/*function evenOddTransform(arr, n) {
+  let evenOdd = arr; 
+  for(let i = 0; i < n; i++) {
+    evenOdd = evenOdd.map(v => v % 2 === 0 ? v - 2 : v + 2);
+  }
+return evenOdd;
+}
+console.log(evenOddTransform([3, 4, 9], 3));
+console.log(evenOddTransform([0, 0, 0], 10));
+console.log(evenOddTransform([1, 2, 3], 1));*/
+
+//War of Numbers
+
+/*function warOfNumbers(arr) {
+	let evenSum, oddSum;
+  evenSum = arr.filter(v => v % 2 === 0).reduce((p,c) => p + c,0);
+  oddSum = arr.filter(v => v % 2 !== 0).reduce((p,c) => p + c,0);
+  return Math.abs(evenSum - oddSum);
+}
+console.log(warOfNumbers([2, 8, 7, 5]));
+console.log(warOfNumbers([12, 90, 75]));
+console.log(warOfNumbers([5, 9, 45, 6, 2, 7, 34, 8, 6, 90, 5, 243]));*/
+
+/*function mapping(letters) {
+	const obj = {};
+  letters.forEach(v => obj[v] = v.toUpperCase());
+  return obj;
+}
+console.log(mapping(["p", "s"]));
+console.log(mapping(["a", "b", "c"]));
+console.log(mapping(["a", "v", "y", "z"]));
+*/
+
+//Transform Upvotes
+
+/*function transformUpvotes(str) {
+	return str.split(' ').map(v => v.includes('k') ? Number.parseFloat(v)*1000
+                           : Number(v));
+}
+
+console.log(transformUpvotes("6.8k 13.5k"));
+console.log(transformUpvotes("5.5k 8.9k 32"));
+console.log(transformUpvotes("20.3k 3.8k 7.7k 992"));*/
+
+//Find Unique Positive Numbers from Array
+/*function uniqueArr(arr) {
+	return [...new Set(arr)].filter(v => v > 0);
+}
+
+console.log(uniqueArr([-5, 1, -7, -5, -2, 3, 3, -5, -1, -1]));
+console.log(uniqueArr([3, -3, -3, 5, 5, -6, -2, -4, -1, 3]));
+console.log(uniqueArr([10, 6, -12, 13, 5, 5, 13, 6, 5]));*/
+
+//Remove the Special Characters from a String
+/*function removeSpecialCharacters(str) {
+	return str.split('').map(v => (".!@#$%^&\*()").includes(v) ? '': v).join('');
+}
+console.log(removeSpecialCharacters("The quick brown fox!"));
+console.log(removeSpecialCharacters("%fd76$fd(-)6GvKlO."));
+console.log(removeSpecialCharacters("D0n$c sed 0di0 du1"));*/
+
+//Filter Repeating Character Strings
+/*function identicalFilter(arr) {
+	return arr.filter(v => [...v].every(c => c === c[0]));
+}
+console.log(identicalFilter(["aaaaaa", "bc", "d", "eeee", "xyz"]));*/
+
+//Negative Image
+
+/*function reverseImage(image) {
+	return image.map(val => 
+             val.map(v => v === 0 ? 1 : 0)     
+  )
+}
+
+console.log(reverseImage([
+  [1, 0, 0],
+  [0, 1, 0],
+  [0, 0, 1]
+]));
+
+
+console.log(reverseImage([
+  [1, 1, 1],
+  [0, 0, 0]
+]));
+
+console.log(reverseImage([
+  [1, 0, 0],
+  [1, 0, 0]
+]));*/
+
+//Measure the Depth of Emptiness
+
+/*function measureDepth(arr) {
+	return JSON.stringify(arr).length/2;
+}
+console.log(measureDepth([]));
+console.log(measureDepth([[]]));
+console.log(measureDepth([[[]]]));
+console.log(measureDepth([[[[[[[[[[[]]]]]]]]]]]));*/
+
+//Sum of Found Indexes
+/*function sumFoundIndexes(arr, n) {
+  return arr.map((v,i) => v === n ? i : 0).reduce((p,c) => p + c, 0);
+}
+
+console.log(sumFoundIndexes([0, 3, 3, 0, 0, 3], 3));
+console.log(sumFoundIndexes([1, 2, 3, 4, 5, 6], 3));
+console.log(sumFoundIndexes([100, 100, 100, 100, 100], 100));
+console.log(sumFoundIndexes([5, 10, 15, 20], 2));*/
+
+//Sum of all Evens in a Matrix
+
+/*function sumOfEvens(arr) {
+	return arr.flat().filter(v => v % 2 == 0).reduce((p,c) => p + c, 0);
+}
+
+console.log(sumOfEvens([
+  [1, 0, 2],
+  [5, 5, 7],
+  [9, 4, 3]
+]));
+
+console.log(sumOfEvens([
+  [1, 1],
+  [1, 1]
+]));
+
+console.log(sumOfEvens([
+  [42, 9],
+  [16, 8]
+]));
+console.log(sumOfEvens([
+  [],
+  [],
+  []
+]));*/
+//Using Arrow Functions
+/*const arrowFunc = (n) => n;
+console.log(arrowFunc(3));
+console.log(arrowFunc("3"));
+console.log(arrowFunc(true));*/
+
+//Using Anonymous functions
+/*console.log(((n) => n)(3));
+console.log(((n) => n)("3"));
+console.log(((n) => n)(true));*/
+
+/*function colorInvert(rgb) {
+	return rgb.map(v => 255 - v);
+}
+console.log(colorInvert([255, 255, 255]));
+console.log(colorInvert([0, 0, 0]));
+console.log(colorInvert([165, 170, 221]));*/
+
+/*function rotateByOne(arr,n) {
+	return [...arr.splice(arr.length - n, n), ...arr]; 
+}	
+console.log(rotateByOne([1, 2, 3, 4, 5],1));
+console.log(rotateByOne([1, 2, 3, 4, 5],2));*/
+
+//True Ones, False Zeros
+/*function integerBoolean(n) {
+	return n.split('').map(v => {
+    v = Number(v);
+    return Boolean(v);
+  });
+}
+console.log(integerBoolean("100101"));
+console.log(integerBoolean("10"));
+console.log(integerBoolean("001"));*/
+
+/*function nothingIsNothing(...args) {
+	return args.every(v => v);
+}
+console.log(nothingIsNothing(0, false, undefined, null));
+console.log(nothingIsNothing(33, "Hello",  true,  []));
+console.log(nothingIsNothing(true, false));*/
+
+//YouTube Upload Count
+
+/*function uploadCount(dates, month) {
+	return dates.filter(v => v.includes(month)).length;
+}
+console.log(uploadCount(["Sept 22", "Sept 21", "Oct 15"], "Sept"));
+console.log(uploadCount(["Sept 22", "Sept 21", "Oct 15"], "Oct"));*/
+
+//Where is Bob!?!
+
+/*function findBob(names) {
+	return names.findIndex(v => v === "Bob");
+}
+console.log(findBob(["Jimmy", "Layla", "Bob"]));
+console.log(findBob(["Bob", "Layla", "Kaitlyn", "Patricia"]));
+console.log(findBob(["Jimmy", "Layla", "James"]));*/
+
+//Total Number of Unique Characters
+
+/*function countUnique(s1, s2) {
+	let uniq = new Set(s1.concat(s2));
+  return [...uniq].length;
+}
+console.log(countUnique("apple", "play"));
+console.log(countUnique("sore", "zebra"));
+console.log(countUnique("a", "soup"));*/
+
+//Purge and Organize
+
+/*function uniqueSort(arr) {
+	return [...new Set(arr)].sort();
+}
+console.log(uniqueSort([1, 2, 4, 3]));
+console.log(uniqueSort([1, 4, 4, 4, 4, 4, 3, 2, 1, 2]));
+console.log(uniqueSort([6, 7, 3, 2, 1]));*/
+
+//Assign Person to Occupation
+
+/*const names = ["Dennis", "Vera", "Mabel", "Annette", "Sussan"]
+const jobs = ["Butcher", "Programmer", "Doctor", "Teacher", "Lecturer"]
+
+function assignPersonToJob(names, jobs) {
+	const obj = {};
+  names.forEach((v,i) => obj[v] = jobs[i]);
+  return obj;
+}
+
+console.log(assignPersonToJob(names, jobs));*/
+
+//Rock Paper Scissors
+
+/*const obj = {
+'Rock': 'Scissors',
+'Scissors': 'Paper',
+'Paper': 'Rock'
+}
+function rps(p1, p2) {
+	if(p1 === p2)
+    return `It's a draw`;
+  if(obj[p1] === p2)
+    return 'The winner is p1';
+  if(obj[p2] === p1)
+    return 'The winner is p2';  
+}
+console.log(rps("Rock", "Paper"));
+console.log(rps("Scissors", "Paper"));
+console.log(rps("Paper", "Paper"));*/
+
+//Remove Repeated Characters
+
+/*function unrepeated(str) {
+	return [...new Set(str.split(''))].join('');
+}
+console.log(unrepeated("hello"));
+console.log(unrepeated("aaaaa"));
+console.log(unrepeated("WWE!!!"));
+console.log(unrepeated("call 911"));*/
+
+//Find the Highest Integer in the Array Using Recursion
+/*function findHighest(arr) {
+	let max = arr[0];
+  arr.forEach(v => {
+    if(v >= max)
+      max = v;
+  })
+  return max;
+}
+console.log(findHighest([-1, 3, 5, 6, 99, 12, 2]));
+console.log(findHighest([0, 12, 4, 87]));
+console.log(findHighest([6,7,8]));*/
+
+//Return an Array of Subarrays
+
+/*function matrix(x, y, z) {
+//return	Array.from({ length : x }, (v,i)=> i);
+  return	Array.from({ length : x }, () => 
+    Array.from({ length : y }, () => z)   
+  );
+}
+
+console.log(matrix(3,2,3));
+console.log(matrix(2, 1, "edabit"));
+console.log(matrix(3, 2, 0));*/
+
+//Sum of Odd and Even Numbers
+/*function sumOddAndEven(arr) {
+	let evenSum = arr.filter(v => v % 2 === 0).reduce((p,c) => p + c, 0);
+  let oddSum = arr.filter(v => v % 2 !== 0).reduce((p,c) => p + c, 0);
+  return [ evenSum, oddSum];
+}
+console.log(sumOddAndEven([1, 2, 3, 4, 5, 6]));
+console.log(sumOddAndEven([-1, -2, -3, -4, -5, -6]));
+console.log(sumOddAndEven([0, 0]));*/
+
+//Simulate the Game "Rock, Paper, Scissors"//
+/*function rps(s1, s2) {
+	const obj = {
+    'Rock' : 'scissors',
+    'paper' : 'rock', 
+    'scissors' : 'paper'
+  }
+  
+  if(s1 === s2)
+    return "TIE";
+  
+  if(obj[s1] === s2)
+    return 'Player 1 wins';
+  
+  if(obj[s2] === s1)
+     return 'Player 2 wins';
+}
+
+console.log(rps("rock", "paper"));
+console.log(rps("paper", "rock"));
+console.log(rps("paper", "scissors"));
+console.log(rps("scissors", "scissors"));
+console.log(rps("scissors", "paper"));*/
+
+//Total Count of Numbers in a MultiDimensional Array
+
+/*const countNumber = arr => {
+	return arr.flat(Infinity).filter(v => Number(v)).length;
+};
+console.log(countNumber([["", 17.2, 5, "edabit"]]));
+console.log(countNumber([[[[[2, 14]]], 2, 3, 4]]));
+console.log(countNumber([["balkot"]]));*/
+
+//Sum Fractions
+
+/*function sumFractions(arr) {
+	let sum = arr.map(v => v[0]/v[1]).reduce((p,c) => p + c, 0);
+  return Math.round(sum);
+}
+
+console.log(sumFractions([[18, 13], [4, 5]]));
+console.log(sumFractions([[36, 4], [22, 60]]));
+console.log(sumFractions([[11, 2], [3, 4], [5, 4], [21, 11], [12, 6]]));*/
+
+//Count the Letters and Digits
+
+/*function countAll(str) {
+  let letters = 0, digits = 0;
+	str.split('').map(v => !isNaN(Number(v)) ?  Number(v) : v).forEach(v => {
+    if(typeof(v) === 'number')
+      letters++;
+    if(typeof(v) === 'string')
+      digits++;
+  });
+  return { "LETTERS": letters, "DIGITS": digits };
+}
+
+//console.log(countAll("Hello World"));
+console.log(countAll("H3ll0 Wor1d"));*/
+
+/*function sharedLetters(str1, str2) {
+	let a1 = str1.split('');
+  let a2 = str2.split('');
+  return a1.filter(v => a2.includes(v)).length;
+}
+
+console.log(sharedLetters("apple", "meaty"));
+console.log(sharedLetters("fan", "forsook"));
+console.log(sharedLetters("spout", "shout"));*/
+
+//Playing RisiKo!
+
+//Total Sales of Product
+
+/*function totalSales(sales, product) {
+	let index = sales.flat().findIndex(v => v === product);
+  if(index < 0)
+    return "Product not found";
+  return sales.map(v => v[index]).slice(1).reduce((p,c) => p + c, 0);
+}
+console.log(totalSales([
+  ["A", "B", "C"],
+  [ 2 ,  7 ,  1 ],
+  [ 3 ,  6 ,  6 ],
+  [ 4 ,  5 ,  5 ]
+], "A"));
+
+console.log(totalSales([
+  ["A", "B", "C"],
+  [ 2 ,  7 ,  1 ],
+  [ 3 ,  6 ,  6 ],
+  [ 4 ,  5 ,  5 ]
+], "C"));
+
+console.log(totalSales([
+  ["A", "B", "C"],
+  [ 2 ,  7 ,  1 ],
+  [ 3 ,  6 ,  6 ],
+  [ 4 ,  5 ,  5 ]
+], "D"));*/
+
+//Who's The Oldest?
+
+/*function oldest(people) {
+	let max = Math.max(...Object.values(people));
+  return Object.entries(people).filter(v => v.includes(max)).flat()[0];
+}
+
+console.log(oldest({
+  Emma: 71,
+  Jack: 45,
+  Amy: 15,
+  Ben: 29
+}));
+
+console.log(oldest({
+  Max: 9,
+  Josh: 13,
+  Sam: 48,
+  Anne: 33
+}));*/
+
+//Album in Albumns
+
+/*function releaseYear(album) {
+	const albums = {
+    "2015": ["Vulnicura", "Honeymoon", "Rebel Heart"],
+    "2016": ["Lemonade", "Blackstar", "A Moon Shaped Pool"],
+    "2017": ["Flower Boy", "Antisocialites"],
+    "2018": ["El Mal Querer", "Someone Out There", "Cranberry", "Kamikaze"],
+    "2019": ["thank u next", "Magdalene", "Ode to Joy"],
+    "2020": ["Rough and Rowdy Ways", "folklore", "Future Nostalgia", "Colores"]
+  }
+  
+ let arr = Object.entries(albums);
+  
+ if(!arr.filter(v => v[1].includes(album)).length)
+    return "Unknown";
+  return arr.filter(v => v[1].includes(album)).at(0)[0]; 
+}
+
+console.log(releaseYear("Ode to Joy"));
+console.log(releaseYear("Honeymoon"));
+console.log(releaseYear("Fake_albu"));*/
+
+//Find Value in a Binary Tree
+/*const arr1 = [3, [ 8, [ 5, null, null], null], [ 7, null, null]]
+function valueInTree(tree, val) {
+	return tree.flat(Infinity).includes(val);
+}
+
+console.log(valueInTree(arr1, 5));
+
+console.log(valueInTree(arr1, 9));
+console.log(valueInTree(arr1, 51));*/
+
+//Histogram Function
+function histogram(arr, char) {
+	return arr.map(v => char.repeat(v)).join("\n");
+}
+
+//console.log('Test\nTest2\nTest3');
+console.log(histogram([1, 3, 4], "#"));
+console.log(histogram([6, 2, 15, 3], "="));
+console.log(histogram([1, 10], "+"));
